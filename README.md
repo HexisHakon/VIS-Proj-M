@@ -12,7 +12,7 @@
     <br />
     Supervisors: Shivam Agarwal & Cedric Krause
     <br />
-    <a href="https://www.uni-bamberg.de/vis/"><strong>Zur Website des Lehrstuhls »</strong></a>
+    <a href="https://www.uni-bamberg.de/vis/"><strong>Website of the academic chair »</strong></a>
     <br />
     <br />
     <a href="#installation">Installation</a>
