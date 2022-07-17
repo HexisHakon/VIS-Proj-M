@@ -38,6 +38,12 @@
   ```sh
   npm install
   ```
+3. Create file named ".env" in the root directory and paste in:
+  ```sh
+  RIOT_API_KEY=
+  ```
+4. Login <a href="https://developer.riotgames.com/">here</a> and paste a generated token after the '=' in the .env file
+_Example: RIOT_API_KEY=RGAPI-187b27b8-1905-44e2-88dd-24f4e214e994_
 <p align="right">(<a href="#top">back to top</a>)</p>
   
   
