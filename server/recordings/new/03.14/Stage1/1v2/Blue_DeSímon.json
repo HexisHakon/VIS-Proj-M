@@ -1,0 +1,3286 @@
+[
+  {
+    "alternatives": [
+      {
+        "confidence": 641.50177,
+        "result": [
+          {
+            "end": 22.35,
+            "start": 21.36,
+            "word": "unterstützungsgegenstände"
+          }
+        ],
+        "text": "unterstützungsgegenstände"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 110.149673,
+        "result": [
+          {
+            "end": 46.02,
+            "start": 45.72,
+            "word": "alle"
+          },
+          {
+            "end": 46.32,
+            "start": 46.02,
+            "word": "auf"
+          },
+          {
+            "end": 46.47,
+            "start": 46.32,
+            "word": "die"
+          },
+          {
+            "end": 46.65,
+            "start": 46.47,
+            "word": "uhr"
+          },
+          {
+            "end": 46.86,
+            "start": 46.65,
+            "word": "gucken"
+          }
+        ],
+        "text": " alle auf die uhr gucken"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 110.149673,
+        "result": [
+          {
+            "end": 60.10,
+            "start": 59.98,
+            "word": "klatsch"
+          }
+        ],
+        "text": " klatsch"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 442.714172,
+        "result": [
+          {
+            "end": 78.3,
+            "start": 77.98,
+            "word": "eroberer"
+          },
+          {
+            "end": 81.98,
+            "start": 81.86,
+            "word": "und"
+          },
+          {
+            "end": 82.19,
+            "start": 82.03,
+            "word": "kein"
+          },
+          {
+            "end": 82.46,
+            "start": 82.19,
+            "word": "conqueror"
+          }
+        ],
+        "text": " eroberer und kein conqueror"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 252.941177,
+        "result": [
+          {
+            "end": 109.59,
+            "start": 109.47,
+            "word": "an"
+          },
+          {
+            "end": 109.71,
+            "start": 109.59,
+            "word": "der"
+          },
+          {
+            "end": 109.8,
+            "start": 109.71,
+            "word": "blauen"
+          },
+          {
+            "end": 110.07,
+            "start": 109.8,
+            "word": "verstärkung"
+          }
+        ],
+        "text": "an der blauen verstärkung"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 75.96843,
+        "result": [
+          {
+            "end": 119.49,
+            "start": 119.28,
+            "word": "level"
+          },
+          {
+            "end": 119.7,
+            "start": 119.49,
+            "word": "drei"
+          },
+          {
+            "end": 120.06,
+            "start": 119.7,
+            "word": "mitte"
+          }
+        ],
+        "text": "level drei mitte"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 603.745972,
+        "result": [
+          {
+            "end": 122.52,
+            "start": 122.31,
+            "word": "dann"
+          },
+          {
+            "end": 122.79,
+            "start": 122.52,
+            "word": "mach"
+          },
+          {
+            "end": 122.94,
+            "start": 122.88,
+            "word": "ich"
+          },
+          {
+            "end": 123.36,
+            "start": 122.94,
+            "word": "die"
+          },
+          {
+            "end": 123.53,
+            "start": 123.36,
+            "word": "wölfe"
+          },
+          {
+            "end": 123.64,
+            "start": 123.53,
+            "word": "und"
+          },
+          {
+            "end": 123.75,
+            "start": 123.64,
+            "word": "komm"
+          }
+        ],
+        "text": " dann mach ich die wölfe und komm"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 152.219284,
+        "result": [
+          {
+            "end": 143.49,
+            "start": 143.31,
+            "word": "der"
+          },
+          {
+            "end": 144.36,
+            "start": 143.49,
+            "word": "erstschlag"
+          }
+        ],
+        "text": " der erstschlag"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 428.152039,
+        "result": [
+          {
+            "end": 172.86,
+            "start": 172.76,
+            "word": "der"
+          },
+          {
+            "end": 173.52,
+            "start": 173.25,
+            "word": "kanonier"
+          },
+          {
+            "end": 173.67,
+            "start": 173.52,
+            "word": "vasalle"
+          },
+          {
+            "end": 174.18,
+            "start": 173.67,
+            "word": "sehr"
+          },
+          {
+            "end": 174.3,
+            "start": 174.18,
+            "word": "gut"
+          },
+          {
+            "end": 174.81,
+            "start": 174.3,
+            "word": "baldus"
+          },
+          {
+            "end": 178.01,
+            "start": 177.74,
+            "word": "gute"
+          },
+          {
+            "end": 178.16,
+            "start": 178.01,
+            "word": "arbeit"
+          }
+        ],
+        "text": "der kanonier vasalle sehr gut baldus gute arbeit"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 154.770996,
+        "result": [
+          {
+            "end": 187.59,
+            "start": 187.49,
+            "word": "so"
+          },
+          {
+            "end": 187.86,
+            "start": 187.59,
+            "word": "ich"
+          },
+          {
+            "end": 188.01,
+            "start": 187.86,
+            "word": "komm"
+          }
+        ],
+        "text": "so ich komm"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 167.287231,
+        "result": [
+          {
+            "end": 194.67,
+            "start": 194.16,
+            "word": "nice"
+          }
+        ],
+        "text": " nice"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 188.840988,
+        "result": [
+          {
+            "end": 197.79,
+            "start": 197.31,
+            "word": "sehr"
+          },
+          {
+            "end": 198.18,
+            "start": 197.79,
+            "word": "gute"
+          },
+          {
+            "end": 198.9,
+            "start": 198.18,
+            "word": "arbeit"
+          }
+        ],
+        "text": " sehr gute arbeit"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 417.231781,
+        "result": [
+          {
+            "end": 200.28,
+            "start": 200.1,
+            "word": "den"
+          },
+          {
+            "end": 200.61,
+            "start": 200.28,
+            "word": "nerv"
+          },
+          {
+            "end": 200.61,
+            "start": 200.28,
+            "word": "ich"
+          },
+          {
+            "end": 200.79,
+            "start": 200.61,
+            "word": "jetzt"
+          },
+          {
+            "end": 201.03,
+            "start": 200.79,
+            "word": "auch"
+          },
+          {
+            "end": 201.36,
+            "start": 201.03,
+            "word": "noch"
+          },
+          {
+            "end": 201.81,
+            "start": 201.54,
+            "word": "okay"
+          },
+          {
+            "end": 201.99,
+            "start": 201.81,
+            "word": "der"
+          },
+          {
+            "end": 202.11,
+            "start": 201.99,
+            "word": "hat"
+          },
+          {
+            "end": 202.65,
+            "start": 202.11,
+            "word": "gesmitet"
+          },
+          {
+            "end": 206.31,
+            "start": 206.13,
+            "word": "hier"
+          },
+          {
+            "end": 206.49,
+            "start": 206.31,
+            "word": "ist"
+          },
+          {
+            "end": 207.24,
+            "start": 206.97,
+            "word": "eine"
+          },
+          {
+            "end": 207.9,
+            "start": 207.24,
+            "word": "mumie"
+          }
+        ],
+        "text": " den nerv ich jetzt auch noch okay der hat gesmitet hier ist eine mumie"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 326.600952,
+        "result": [
+          {
+            "end": 211.32,
+            "start": 210.87,
+            "word": "weinende"
+          },
+          {
+            "end": 211.77,
+            "start": 211.32,
+            "word": "mumie"
+          },
+          {
+            "end": 212.04,
+            "start": 211.86,
+            "word": "oder"
+          },
+          {
+            "end": 212.16,
+            "start": 212.04,
+            "word": "ist"
+          },
+          {
+            "end": 212.16,
+            "start": 212.04,
+            "word": "in"
+          },
+          {
+            "end": 212.46,
+            "start": 212.16,
+            "word": "meinem"
+          },
+          {
+            "end": 212.88,
+            "start": 212.49,
+            "word": "jungle"
+          },
+          {
+            "end": 214.08,
+            "start": 213.93,
+            "word": "in"
+          },
+          {
+            "end": 214.38,
+            "start": 214.08,
+            "word": "meinem"
+          },
+          {
+            "end": 214.86,
+            "start": 214.38,
+            "word": "wald"
+          }
+        ],
+        "text": " weinende mumie oder ist in meinem jungle in meinem wald"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 234.122925,
+        "result": [
+          {
+            "end": 219.42,
+            "start": 219.18,
+            "word": "vielen"
+          },
+          {
+            "end": 219.63,
+            "start": 219.42,
+            "word": "dank"
+          },
+          {
+            "end": 219.72,
+            "start": 219.63,
+            "word": "für"
+          },
+          {
+            "end": 219.93,
+            "start": 219.72,
+            "word": "diese"
+          },
+          {
+            "end": 220.71,
+            "start": 219.93,
+            "word": "information"
+          }
+        ],
+        "text": " vielen dank für diese information"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 294.070129,
+        "result": [
+          {
+            "end": 224.88,
+            "start": 221.76,
+            "word": "unser"
+          },
+          {
+            "end": 226.2,
+            "start": 225.57,
+            "word": "score"
+          },
+          {
+            "end": 226.62,
+            "start": 226.44,
+            "word": "ihr"
+          },
+          {
+            "end": 226.95,
+            "start": 226.62,
+            "word": "habts"
+          },
+          {
+            "end": 227.46,
+            "start": 226.95,
+            "word": "gesehen"
+          }
+        ],
+        "text": "unser score ihr habts gesehen"
+      }
+    ]
+  },
+  
+  {
+    "alternatives": [
+      {
+        "confidence": 382.557281,
+        "result": [
+          {
+            "end": 243.78,
+            "start": 243.66,
+            "word": "ich"
+          },
+          {
+            "end": 244.02,
+            "start": 243.78,
+            "word": "komm"
+          },
+          {
+            "end": 244.5,
+            "start": 244.02,
+            "word": "gleich"
+          },
+          {
+            "end": 244.5,
+            "start": 244.02,
+            "word": "hoch"
+          },
+          {
+            "end": 245.64,
+            "start": 245.31,
+            "word": "aha"
+          },
+          {
+            "end": 246.39,
+            "start": 245.82,
+            "word": "interessante"
+          },
+          {
+            "end": 246.99,
+            "start": 246.39,
+            "word": "taktik"
+          },
+          {
+            "end": 247.38,
+            "start": 247.17,
+            "word": "balduin"
+          }
+        ],
+        "text": " ich komm gleich hoch aha interessante taktik balduin"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 180.596832,
+        "result": [
+          {
+            "end": 250.92,
+            "start": 249.27,
+            "word": "dankeschön"
+          },
+          {
+            "end": 251.43,
+            "start": 251.25,
+            "word": "herr"
+          },
+          {
+            "end": 252.12,
+            "start": 251.43,
+            "word": "troll"
+          }
+        ],
+        "text": " dankeschön herr troll"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 262.42807,
+        "result": [
+          {
+            "end": 256.11,
+            "start": 255.96,
+            "word": "er"
+          },
+          {
+            "end": 256.35,
+            "start": 256.11,
+            "word": "geht"
+          },
+          {
+            "end": 256.68,
+            "start": 256.35,
+            "word": "zurück"
+          },
+          {
+            "end": 256.77,
+            "start": 256.68,
+            "word": "in"
+          },
+          {
+            "end": 256.86,
+            "start": 256.77,
+            "word": "die"
+          },
+          {
+            "end": 257.52,
+            "start": 256.86,
+            "word": "basis"
+          }
+        ],
+        "text": " er geht zurück in die basis"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 99.497444,
+        "result": [
+          {
+            "end": 266.85,
+            "start": 266.7,
+            "word": "oh"
+          },
+          {
+            "end": 267.15,
+            "start": 266.85,
+            "word": "nein"
+          },
+          {
+            "end": 267.24,
+            "start": 267.15,
+            "word": "die"
+          },
+          {
+            "end": 267.72,
+            "start": 267.24,
+            "word": "liegen"
+          },
+          {
+            "end": 267.72,
+            "start": 267.24,
+            "word": "hier"
+          }
+        ],
+        "text": " oh nein die liegen hier"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 415.369507,
+        "result": [
+          {
+            "end": 271.68,
+            "start": 271.5,
+            "word": "achtung"
+          },
+          {
+            "end": 276.18,
+            "start": 276.06,
+            "word": "die"
+          },
+          {
+            "end": 276.57,
+            "start": 276.18,
+            "word": "untere"
+          },
+          {
+            "end": 277.02,
+            "start": 276.57,
+            "word": "linie"
+          },
+          {
+            "end": 277.38,
+            "start": 277.14,
+            "word": "ist"
+          },
+          {
+            "end": 278.01,
+            "start": 277.38,
+            "word": "gefährdet"
+          },
+          {
+            "end": 278.76,
+            "start": 278.37,
+            "word": "ja"
+          }
+        ],
+        "text": " achtung die untere linie ist gefährdet ja"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 93.292458,
+        "result": [
+          {
+            "end": 280.92,
+            "start": 280.56,
+            "word": "ja"
+          },
+          {
+            "end": 280.92,
+            "start": 280.56,
+            "word": "der"
+          },
+          {
+            "end": 281.21,
+            "start": 280.92,
+            "word": "yone"
+          },
+          {
+            "end": 281.55,
+            "start": 281.21,
+            "word": "ist"
+          }
+        ],
+        "text": " ja der yone ist"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 214.509811,
+        "result": [
+          {
+            "end": 288.09,
+            "start": 287.76,
+            "word": "vielleicht"
+          },
+          {
+            "end": 288.15,
+            "start": 288.09,
+            "word": "die"
+          },
+          {
+            "end": 288.45,
+            "start": 288.15,
+            "word": "lulu"
+          },
+          {
+            "end": 288.56,
+            "start": 288.45,
+            "word": "ja"
+          }
+        ],
+        "text": " vielleicht die lulu ja"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 176.331039,
+        "result": [
+          {
+            "end": 313.68,
+            "start": 313.38,
+            "word": "achtung"
+          },
+          {
+            "end": 314.16,
+            "start": 313.68,
+            "word": "selina"
+          }
+        ],
+        "text": "achtung selina"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 414.680878,
+        "result": [
+          {
+            "end": 316.14,
+            "start": 315.96,
+            "word": "hätte"
+          },
+          {
+            "end": 316.29,
+            "start": 316.14,
+            "word": "mich"
+          },
+          {
+            "end": 316.44,
+            "start": 316.29,
+            "word": "auch"
+          },
+          {
+            "end": 317.28,
+            "start": 316.44,
+            "word": "gewundert"
+          }
+        ],
+        "text": " hätte mich auch gewundert"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 414.680878,
+        "result": [
+          {
+            "end": 325.54,
+            "start": 325.41,
+            "word": "oh"
+          },
+          {
+            "end": 326.01,
+            "start": 325.54,
+            "word": "gerne"
+          }
+        ],
+        "text": " oh gerne"
+      }
+    ]
+  },
+  
+  {
+    "alternatives": [
+      {
+        "confidence": 134.516724,
+        "result": [
+          {
+            "end": 330.69,
+            "start": 330.24,
+            "word": "warte"
+          },
+          {
+            "end": 330.92,
+            "start": 330.81,
+            "word": "der"
+          },
+          {
+            "end": 331.05,
+            "start": 330.92,
+            "word": "ist"
+          },
+          {
+            "end": 331.23,
+            "start": 331.05,
+            "word": "jetzt"
+          },
+          {
+            "end": 331.39,
+            "start": 331.23,
+            "word": "eh"
+          },
+          {
+            "end": 331.65,
+            "start": 331.39,
+            "word": "weg"
+          }
+        ],
+        "text": " warte der ist jetzt eh weg"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 96.510681,
+        "result": [
+          {
+            "end": 335.19,
+            "start": 335.07,
+            "word": "good"
+          },
+          {
+            "end": 335.64,
+            "start": 335.19,
+            "word": "job"
+          }
+        ],
+        "text": " good job"
+      }
+    ]
+  },
+
+  {
+    "alternatives": [
+      {
+        "confidence": 270.193787,
+        "result": [
+          {
+            "end": 341.97,
+            "start": 341.37,
+            "word": "nice"
+          },
+          {
+            "end": 342.42,
+            "start": 341.97,
+            "word": "one"
+          }
+        ],
+        "text": " nice one"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 252.463669,
+        "result": [
+          {
+            "end": 348.93,
+            "start": 348.66,
+            "word": "gut"
+          },
+          {
+            "end": 349.38,
+            "start": 348.93,
+            "word": "einer"
+          },
+          {
+            "end": 351.21,
+            "start": 351.06,
+            "word": "ist"
+          },
+          {
+            "end": 351.36,
+            "start": 351.21,
+            "word": "das"
+          },
+          {
+            "end": 351.9,
+            "start": 351.36,
+            "word": "behindert"
+          },
+          {
+            "end": 353.7,
+            "start": 353.43,
+            "word": "gut"
+          },
+          {
+            "end": 354.12,
+            "start": 353.7,
+            "word": "einer"
+          }
+        ],
+        "text": " gut einer ist das behindert gut einer"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 228.700058,
+        "result": [
+          {
+            "end": 371.28,
+            "start": 370.89,
+            "word": "achja"
+          },
+          {
+            "end": 371.61,
+            "start": 371.28,
+            "word": "stimmt"
+          },
+          {
+            "end": 373.98,
+            "start": 371.61,
+            "word": "tilt"
+          }
+        ],
+        "text": " achja stimmt tilt"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 376.83551,
+        "result": [
+          {
+            "end": 394.31,
+            "start": 393.96,
+            "word": "nice"
+          },
+          {
+            "end": 395.73,
+            "start": 395.43,
+            "word": "sehr"
+          },
+          {
+            "end": 396.12,
+            "start": 395.73,
+            "word": "gut"
+          }
+        ],
+        "text": "nice sehr gut"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 208.486435,
+        "result": [
+          {
+            "end": 428.61,
+            "start": 428.13,
+            "word": "schöne"
+          },
+          {
+            "end": 428.88,
+            "start": 428.61,
+            "word": "haut"
+          },
+          {
+            "end": 429.15,
+            "start": 428.88,
+            "word": "hast"
+          },
+          {
+            "end": 429.21,
+            "start": 429.15,
+            "word": "du"
+          },
+          {
+            "end": 429.75,
+            "start": 429.21,
+            "word": "heute"
+          }
+        ],
+        "text": " schöne haut hast du heute"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 283.40509,
+        "result": [
+          {
+            "end": 477.72,
+            "start": 477.12,
+            "word": "yes"
+          },
+          {
+            "end": 478.44,
+            "start": 477.99,
+            "word": "ich"
+          },
+          {
+            "end": 478.8,
+            "start": 478.56,
+            "word": "komm"
+          },
+          {
+            "end": 479.07,
+            "start": 478.8,
+            "word": "botlane"
+          }
+        ],
+        "text": "yes ich komm botlane"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 148.71637,
+        "result": [
+          {
+            "end": 482.34,
+            "start": 482.1,
+            "word": "drei"
+          },
+          {
+            "end": 482.76,
+            "start": 482.34,
+            "word": "sekunden"
+          },
+          {
+            "end": 482.91,
+            "start": 482.76,
+            "word": "dann"
+          },
+          {
+            "end": 483.06,
+            "start": 482.91,
+            "word": "bin"
+          },
+          {
+            "end": 483.18,
+            "start": 483.06,
+            "word": "ich"
+          },
+          {
+            "end": 483.51,
+            "start": 483.18,
+            "word": "da"
+          }
+        ],
+        "text": " drei sekunden dann bin ich da"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 162.142944,
+        "result": [
+          {
+            "end": 486.84,
+            "start": 486.69,
+            "word": "oh"
+          },
+          {
+            "end": 486.96,
+            "start": 486.84,
+            "word": "der"
+          },
+          {
+            "end": 487.11,
+            "start": 486.96,
+            "word": "hat"
+          },
+          {
+            "end": 487.26,
+            "start": 487.11,
+            "word": "schon"
+          },
+          {
+            "end": 487.77,
+            "start": 487.26,
+            "word": "ult"
+          },
+          {
+            "end": 488.31,
+            "start": 487.77,
+            "word": "der"
+          },
+          {
+            "end": 488.71,
+            "start": 488.31,
+            "word": "amumu"
+          }
+        ],
+        "text": " oh der hat schon ult der amumu"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 139.203918,
+        "result": [
+          {
+            "end": 492.18,
+            "start": 491.31,
+            "word": "schlendern"
+          }
+        ],
+        "text": " schlendern"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 29.187698,
+        "result": [
+          {
+            "end": 493.44,
+            "start": 493.2,
+            "word": "ja"
+          }
+        ],
+        "text": "ja"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 202.443268,
+        "result": [
+          {
+            "end": 499.56,
+            "start": 494.64,
+            "word": "keine"
+          },
+          {
+            "end": 500.07,
+            "start": 499.89,
+            "word": "ult"
+          }
+        ],
+        "text": "keine ult"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 177.353699,
+        "result": [
+          {
+            "end": 508.8,
+            "start": 508.56,
+            "word": "so"
+          },
+          {
+            "end": 509.1,
+            "start": 508.8,
+            "word": "jetzt"
+          },
+          {
+            "end": 509.22,
+            "start": 509.1,
+            "word": "hab"
+          },
+          {
+            "end": 509.28,
+            "start": 509.22,
+            "word": "ich"
+          },
+          {
+            "end": 509.37,
+            "start": 509.28,
+            "word": "auch"
+          },
+          {
+            "end": 509.64,
+            "start": 509.37,
+            "word": "ult"
+          }
+        ],
+        "text": "so jetzt hab ich auch ult"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 117.760498,
+        "result": [
+          {
+            "end": 517.14,
+            "start": 516.98,
+            "word": "nice"
+          }
+        ],
+        "text": "nice"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 170.811279,
+        "result": [
+          {
+            "end": 523.17,
+            "start": 523.08,
+            "word": "ich"
+          },
+          {
+            "end": 523.56,
+            "start": 523.17,
+            "word": "push"
+          },
+          {
+            "end": 523.77,
+            "start": 523.56,
+            "word": "grad"
+          },
+          {
+            "end": 523.92,
+            "start": 523.77,
+            "word": "rein"
+          }
+        ],
+        "text": " ich push grad rein"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 599.46228,
+        "result": [
+          {
+            "end": 538.68,
+            "start": 538.53,
+            "word": "der"
+          },
+          {
+            "end": 539.62,
+            "start": 538.68,
+            "word": "gastgeber"
+          }
+        ],
+        "text": "der gastgeber"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 572.27887,
+        "result": [
+          {
+            "end": 562.32,
+            "start": 562.18,
+            "word": "oh"
+          },
+          {
+            "end": 563.1,
+            "start": 562.74,
+            "word": "ja"
+          }
+        ],
+        "text": "oh ja"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 101.347977,
+        "result": [
+          {
+            "end": 567.3,
+            "start": 566.7,
+            "word": "ah"
+          },
+          {
+            "end": 567.3,
+            "start": 566.7,
+            "word": "nice"
+          }
+        ],
+        "text": " ah nice"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 101.218155,
+        "result": [
+          {
+            "end": 574.8,
+            "start": 574.56,
+            "word": "ich"
+          },
+          {
+            "end": 575.01,
+            "start": 574.8,
+            "word": "mach"
+          },
+          {
+            "end": 575.01,
+            "start": 574.8,
+            "word": "gerade"
+          },
+          {
+            "end": 575.55,
+            "start": 575.01,
+            "word": "drache"
+          }
+        ],
+        "text": " ich mach gerade drache"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 137.323761,
+        "result": [
+          {
+            "end": 579.48,
+            "start": 579.15,
+            "word": "gut"
+          },
+          {
+            "end": 580.11,
+            "start": 579.48,
+            "word": "eins"
+          }
+        ],
+        "text": " gute eins"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 404.223785,
+        "result": [
+          {
+            "end": 593.91,
+            "start": 593.67,
+            "word": "gut"
+          },
+          {
+            "end": 594.06,
+            "start": 593.91,
+            "word": "eins"
+          },
+          {
+            "end": 594.3,
+            "start": 594.06,
+            "word": "hört"
+          },
+          {
+            "end": 594.69,
+            "start": 594.3,
+            "word": "sich"
+          },
+          {
+            "end": 594.9,
+            "start": 594.69,
+            "word": "trotzdem"
+          },
+          {
+            "end": 600.57,
+            "start": 594.9,
+            "word": "lustig"
+          },
+          {
+            "end": 603.15,
+            "start": 602.49,
+            "word": "an"
+          }
+        ],
+        "text": " gut eins hört sich trotzdem lustig an"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 404.223785,
+        "result": [
+          {
+            "end": 603.15,
+            "start": 602.49,
+            "word": "dann"
+          },
+          {
+            "end": 603.75,
+            "start": 603.6,
+            "word": "wär"
+          },
+          {
+            "end": 603.84,
+            "start": 603.75,
+            "word": "ich"
+          },
+          {
+            "end": 604.5,
+            "start": 603.84,
+            "word": "vorsichtig"
+          }
+        ],
+        "text": " dann wär ich vorsichtig"
+      }
+    ]
+  },
+  
+  {
+    "alternatives": [
+      {
+        "confidence": 464.786041,
+        "result": [
+          {
+            "end": 623.338875,
+            "start": 622.468875,
+            "word": "einkaufen"
+          }
+        ],
+        "text": "einkaufen"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 67.939888,
+        "result": [
+          {
+            "end": 624.628875,
+            "start": 624.418875,
+            "word": "nicht"
+          },
+          {
+            "end": 625.918875,
+            "start": 624.628875,
+            "word": "shoppen"
+          }
+        ],
+        "text": " nicht shoppen"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 227.057404,
+        "result": [
+          {
+            "end": 630.508875,
+            "start": 630.178875,
+            "word": "blaue"
+          },
+          {
+            "end": 631.168875,
+            "start": 630.508875,
+            "word": "verstärkung"
+          },
+          {
+            "end": 631.708875,
+            "start": 631.198875,
+            "word": "genau"
+          }
+        ],
+        "text": " blaue verstärkung genau"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 244.419067,
+        "result": [
+          {
+            "end": 647.338875,
+            "start": 647.128875,
+            "word": "damit"
+          },
+          {
+            "end": 647.518875,
+            "start": 647.338875,
+            "word": "wird"
+          },
+          {
+            "end": 647.638875,
+            "start": 647.518875,
+            "word": "der"
+          },
+          {
+            "end": 647.908875,
+            "start": 647.638875,
+            "word": "tod"
+          },
+          {
+            "end": 648.688875,
+            "start": 647.908875,
+            "word": "gestraft"
+          }
+        ],
+        "text": " damit wird der tod gestraft"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 85.402184,
+        "result": [
+          {
+            "end": 674.318875,
+            "start": 674.158875,
+            "word": "bin"
+          },
+          {
+            "end": 674.618875,
+            "start": 674.318875,
+            "word": "gleich"
+          },
+          {
+            "end": 674.858875,
+            "start": 674.618875,
+            "word": "da"
+          }
+        ],
+        "text": " bin gleich da"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 134.871552,
+        "result": [
+          {
+            "end": 684.328875,
+            "start": 684.148875,
+            "word": "oh"
+          },
+          {
+            "end": 684.568875,
+            "start": 684.328875,
+            "word": "mein"
+          },
+          {
+            "end": 684.868875,
+            "start": 684.568875,
+            "word": "gott"
+          }
+        ],
+        "text": " oh mein gott"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 233.601456,
+        "result": [
+          {
+            "end": 691.168875,
+            "start": 690.928875,
+            "word": "eine"
+          },
+          {
+            "end": 691.738875,
+            "start": 691.168875,
+            "word": "rakete"
+          }
+        ],
+        "text": " eine rakete"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 242.026505,
+        "result": [
+          {
+            "end": 704.428875,
+            "start": 703.768875,
+            "word": "runterfahren"
+          },
+          {
+            "end": 704.938875,
+            "start": 704.428875,
+            "word": "gold"
+          }
+        ],
+        "text": "runterfahren gold"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 541.4646,
+        "result": [
+          {
+            "end": 767.248875,
+            "start": 766.828875,
+            "word": "get"
+          },
+          {
+            "end": 768.178875,
+            "start": 767.338875,
+            "word": "verarscht"
+          }
+        ],
+        "text": "get verarscht"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 46.141953,
+        "result": [
+          {
+            "end": 770.188875,
+            "start": 769.828875,
+            "word": "ach"
+          },
+          {
+            "end": 770.348875,
+            "start": 770.188875,
+            "word": "guck"
+          },
+          {
+            "end": 770.548875,
+            "start": 770.348875,
+            "word": "mal"
+          }
+        ],
+        "text": "ach guck mal"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 223.128448,
+        "result": [
+          {
+            "end": 773.878875,
+            "start": 773.578875,
+            "word": "könnte"
+          },
+          {
+            "end": 774.448875,
+            "start": 773.878875,
+            "word": "hochkommen"
+          },
+          {
+            "end": 775.498875,
+            "start": 775.228875,
+            "word": "ja"
+          },
+          {
+            "end": 775.628875,
+            "start": 775.528875,
+            "word": "also"
+          },
+          {
+            "end": 775.788875,
+            "start": 775.628875,
+            "word": "ich"
+          },
+          {
+            "end": 775.978875,
+            "start": 775.788875,
+            "word": "würde"
+          },
+          {
+            "end": 776.098875,
+            "start": 775.978875,
+            "word": "auf"
+          },
+          {
+            "end": 776.248875,
+            "start": 776.098875,
+            "word": "jeden"
+          },
+          {
+            "end": 776.398875,
+            "start": 776.248875,
+            "word": "fall"
+          },
+          {
+            "end": 776.668875,
+            "start": 776.398875,
+            "word": "mit"
+          }
+        ],
+        "text": " könnte hochkommen ja also ich würde auf jeden fall mit"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 93.456596,
+        "result": [
+          {
+            "end": 785.038875,
+            "start": 784.678875,
+            "word": "nice"
+          }
+        ],
+        "text": " nice"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 103.249878,
+        "result": [
+          {
+            "end": 787.648875,
+            "start": 787.438875,
+            "word": "ne"
+          },
+          {
+            "end": 787.828875,
+            "start": 787.648875,
+            "word": "ne"
+          },
+          {
+            "end": 788.098875,
+            "start": 787.858875,
+            "word": "pillar"
+          },
+          {
+            "end": 788.218875,
+            "start": 788.098875,
+            "word": "ist"
+          },
+          {
+            "end": 788.578875,
+            "start": 788.218875,
+            "word": "nicht"
+          },
+          {
+            "end": 788.578875,
+            "start": 788.218875,
+            "word": "up"
+          }
+        ],
+        "text": " ne ne pillar ist nicht up"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 277.803101,
+        "result": [
+          {
+            "end": 803.008875,
+            "start": 802.228875,
+            "word": "gut"
+          }
+        ],
+        "text": " gut"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 54.84721,
+        "result": [
+          {
+            "end": 811.798875,
+            "start": 811.228875,
+            "word": "ja"
+          }
+        ],
+        "text": " ja"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 65.715691,
+        "result": [
+          {
+            "end": 813.298875,
+            "start": 813.058875,
+            "word": "nix"
+          },
+          {
+            "end": 813.808875,
+            "start": 813.298875,
+            "word": "tauchen"
+          }
+        ],
+        "text": " nix tauchen"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 219.996048,
+        "result": [
+          {
+            "end": 817.888875,
+            "start": 817.708875,
+            "word": "also"
+          },
+          {
+            "end": 817.978875,
+            "start": 817.888875,
+            "word": "ich"
+          },
+          {
+            "end": 818.128875,
+            "start": 817.978875,
+            "word": "hab"
+          },
+          {
+            "end": 818.338875,
+            "start": 818.128875,
+            "word": "meine"
+          },
+          {
+            "end": 819.268875,
+            "start": 818.338875,
+            "word": "taucherausrüstung"
+          },
+          {
+            "end": 819.508875,
+            "start": 819.268875,
+            "word": "an"
+          },
+          {
+            "end": 819.718875,
+            "start": 819.508875,
+            "word": "also"
+          },
+          {
+            "end": 819.778875,
+            "start": 819.718875,
+            "word": "ich"
+          },
+          {
+            "end": 819.958875,
+            "start": 819.778875,
+            "word": "könnte"
+          },
+          {
+            "end": 820.408875,
+            "start": 819.958875,
+            "word": "kommen"
+          }
+        ],
+        "text": " also ich hab meine taucherausrüstung an also ich könnte kommen"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 218.006958,
+        "result": [
+          {
+            "end": 826.918875,
+            "start": 826.738875,
+            "word": "herr"
+          },
+          {
+            "end": 827.308875,
+            "start": 826.918875,
+            "word": "latex"
+          },
+          {
+            "end": 827.698875,
+            "start": 827.308875,
+            "word": "gragas"
+          }
+        ],
+        "text": "herr latex gragas"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 60.793865,
+        "result": [
+          {
+            "end": 840.478875,
+            "start": 840.178875,
+            "word": "ach"
+          },
+          {
+            "end": 841.048875,
+            "start": 840.478875,
+            "word": "quatsch"
+          }
+        ],
+        "text": " ach quatsch"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 149.8526,
+        "result": [
+          {
+            "end": 856.498875,
+            "start": 856.108875,
+            "word": "okay"
+          },
+          {
+            "end": 856.738875,
+            "start": 856.588875,
+            "word": "oh"
+          },
+          {
+            "end": 856.978875,
+            "start": 856.738875,
+            "word": "mann"
+          },
+          {
+            "end": 857.098875,
+            "start": 856.978875,
+            "word": "ist"
+          },
+          {
+            "end": 857.248875,
+            "start": 857.098875,
+            "word": "das"
+          },
+          {
+            "end": 857.848875,
+            "start": 857.248875,
+            "word": "unfair"
+          }
+        ],
+        "text": " okay oh mann ist das unfair"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 322.656891,
+        "result": [
+          {
+            "end": 881.728875,
+            "start": 881.128875,
+            "word": "welle"
+          }
+        ],
+        "text": " welle"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 218.388718,
+        "result": [
+          {
+            "end": 885.718875,
+            "start": 885.058875,
+            "word": "liegt"
+          },
+          {
+            "end": 886.018875,
+            "start": 885.718875,
+            "word": "genau"
+          },
+          {
+            "end": 886.168875,
+            "start": 886.108875,
+            "word": "in"
+          },
+          {
+            "end": 886.258875,
+            "start": 886.168875,
+            "word": "der"
+          },
+          {
+            "end": 887.518875,
+            "start": 886.768875,
+            "word": "mitte"
+          },
+          {
+            "end": 887.518875,
+            "start": 886.768875,
+            "word": "libelle"
+          }
+        ],
+        "text": " liegt genau in der mitte libelle"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 333.370178,
+        "result": [
+          {
+            "end": 908.008875,
+            "start": 907.258875,
+            "word": "man"
+          },
+          {
+            "end": 909.388875,
+            "start": 908.698875,
+            "word": "träger"
+          },
+          {
+            "end": 909.778875,
+            "start": 909.448875,
+            "word": "ja"
+          }
+        ],
+        "text": " man träger ja"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 439.485077,
+        "result": [
+          {
+            "end": 922.888875,
+            "start": 922.588875,
+            "word": "hast"
+          },
+          {
+            "end": 923.038875,
+            "start": 922.888875,
+            "word": "du"
+          },
+          {
+            "end": 923.218875,
+            "start": 923.038875,
+            "word": "e"
+          },
+          {
+            "end": 923.428875,
+            "start": 923.218875,
+            "word": "oder"
+          },
+          {
+            "end": 923.698875,
+            "start": 923.428875,
+            "word": "so"
+          }
+        ],
+        "text": "hast du e oder so"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 64.184486,
+        "result": [
+          {
+            "end": 925.168875,
+            "start": 924.958875,
+            "word": "sehr"
+          },
+          {
+            "end": 925.378875,
+            "start": 925.168875,
+            "word": "gut"
+          }
+        ],
+        "text": " sehr gut"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 173.256836,
+        "result": [
+          {
+            "end": 945.868875,
+            "start": 945.718875,
+            "word": "der"
+          },
+          {
+            "end": 946.258875,
+            "start": 945.868875,
+            "word": "xerath"
+          },
+          {
+            "end": 946.888875,
+            "start": 946.318875,
+            "word": "könnt"
+          },
+          {
+            "end": 947.158875,
+            "start": 946.948875,
+            "word": "der"
+          },
+          {
+            "end": 947.308875,
+            "start": 947.158875,
+            "word": "ist"
+          },
+          {
+            "end": 947.668875,
+            "start": 947.308875,
+            "word": "jedenfalls"
+          },
+          {
+            "end": 947.968875,
+            "start": 947.668875,
+            "word": "weg"
+          }
+        ],
+        "text": " der xerath könnt der ist jedenfalls weg"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 68.179703,
+        "result": [
+          {
+            "end": 951.298875,
+            "start": 951.058875,
+            "word": "ah"
+          },
+          {
+            "end": 951.368875,
+            "start": 951.298875,
+            "word": "ne"
+          },
+          {
+            "end": 951.438875,
+            "start": 951.368875,
+            "word": "der"
+          },
+          {
+            "end": 951.478875,
+            "start": 951.438875,
+            "word": "ist"
+          },
+          {
+            "end": 951.628875,
+            "start": 951.478875,
+            "word": "noch"
+          },
+          {
+            "end": 951.958875,
+            "start": 951.628875,
+            "word": "hier"
+          }
+        ],
+        "text": " ah ne der ist noch hier"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 257.860626,
+        "result": [
+          {
+            "end": 960.928875,
+            "start": 960.688875,
+            "word": "tor"
+          },
+          {
+            "end": 961.288875,
+            "start": 960.928875,
+            "word": "tower"
+          }
+        ],
+        "text": " tor tower"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 393.162903,
+        "result": [
+          {
+            "end": 971.638875,
+            "start": 971.398875,
+            "word": "zehn"
+          },
+          {
+            "end": 972.088875,
+            "start": 971.638875,
+            "word": "null"
+          },
+          {
+            "end": 972.298875,
+            "start": 972.088875,
+            "word": "ace"
+          },
+          {
+            "end": 972.778875,
+            "start": 972.388875,
+            "word": "ist"
+          },
+          {
+            "end": 973.678875,
+            "start": 973.348875,
+            "word": "das"
+          },
+          {
+            "end": 974.848875,
+            "start": 974.158875,
+            "word": "eklig"
+          }
+        ],
+        "text": "ein zehn null ace ist das eklig"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 104.896042,
+        "result": [
+          {
+            "end": 989.338875,
+            "start": 987.808875,
+            "word": "hingeblinkt"
+          }
+        ],
+        "text": " hingeblinkt"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 282.503052,
+        "result": [
+          {
+            "end": 993.418875,
+            "start": 990.388875,
+            "word": "der"
+          },
+          {
+            "end": 994.198875,
+            "start": 993.778875,
+            "word": "yone"
+          },
+          {
+            "end": 994.408875,
+            "start": 994.198875,
+            "word": "ist"
+          },
+          {
+            "end": 995.158875,
+            "start": 995.008875,
+            "word": "da"
+          },
+          {
+            "end": 995.908875,
+            "start": 995.158875,
+            "word": "noch"
+          },
+          {
+            "end": 996.148875,
+            "start": 995.968875,
+            "word": "der"
+          },
+          {
+            "end": 996.298875,
+            "start": 996.148875,
+            "word": "hat"
+          },
+          {
+            "end": 996.538875,
+            "start": 996.298875,
+            "word": "tpt"
+          }
+        ],
+        "text": "der yone ist da noch der hat tpt"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 237.098297,
+        "result": [
+          {
+            "end": 1002.808875,
+            "start": 1002.598875,
+            "word": "baldus"
+          },
+          {
+            "end": 1002.958875,
+            "start": 1002.808875,
+            "word": "das"
+          },
+          {
+            "end": 1003.108875,
+            "start": 1002.958875,
+            "word": "kommt"
+          },
+          {
+            "end": 1003.318875,
+            "start": 1003.108875,
+            "word": "nicht"
+          },
+          {
+            "end": 1003.438875,
+            "start": 1003.318875,
+            "word": "in"
+          },
+          {
+            "end": 1003.558875,
+            "start": 1003.438875,
+            "word": "die"
+          },
+          {
+            "end": 1003.648875,
+            "start": 1003.558875,
+            "word": "tüte"
+          },
+          {
+            "end": 1004.128875,
+            "start": 1003.648875,
+            "word": "ich"
+          },
+          {
+            "end": 1004.488875,
+            "start": 1004.218875,
+            "word": "komme"
+          },
+          {
+            "end": 1004.788875,
+            "start": 1004.488875,
+            "word": "hoch"
+          }
+        ],
+        "text": " baldus das kommt nicht in die tüte ich komme hoch"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 150.253021,
+        "result": [
+          {
+            "end": 1006.528875,
+            "start": 1005.988875,
+            "word": "oh"
+          },
+          {
+            "end": 1007.428875,
+            "start": 1007.098875,
+            "word": "fuck"
+          },
+          {
+            "end": 1007.758875,
+            "start": 1007.428875,
+            "word": "ich"
+          },
+          {
+            "end": 1007.998875,
+            "start": 1007.788875,
+            "word": "ich"
+          },
+          {
+            "end": 1008.298875,
+            "start": 1007.998875,
+            "word": "versteh"
+          },
+          {
+            "end": 1008.478875,
+            "start": 1008.298875,
+            "word": "das"
+          },
+          {
+            "end": 1008.688875,
+            "start": 1008.478875,
+            "word": "nicht"
+          }
+        ],
+        "text": "oh fuck ich ich versteh das nicht"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 87.676971,
+        "result": [
+          {
+            "end": 1010.338875,
+            "start": 1010.188875,
+            "word": "wir"
+          },
+          {
+            "end": 1010.638875,
+            "start": 1010.338875,
+            "word": "müssen"
+          },
+          {
+            "end": 1010.788875,
+            "start": 1010.638875,
+            "word": "halt"
+          },
+          {
+            "end": 1010.998875,
+            "start": 1010.788875,
+            "word": "auch"
+          },
+          {
+            "end": 1011.118875,
+            "start": 1010.998875,
+            "word": "alle"
+          },
+          {
+            "end": 1011.388875,
+            "start": 1011.118875,
+            "word": "weg"
+          }
+        ],
+        "text": " wir müssen halt auch alle weg"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 68.014465,
+        "result": [
+          {
+            "end": 1024.918875,
+            "start": 1024.258875,
+            "word": "level"
+          },
+          {
+            "end": 1024.918875,
+            "start": 1024.258875,
+            "word": "vierzehn"
+          }
+        ],
+        "text": " level vierzehn"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 589.205078,
+        "result": [
+          {
+            "end": 1061.728875,
+            "start": 1061.518875,
+            "word": "ach"
+          },
+          {
+            "end": 1062.208875,
+            "start": 1061.728875,
+            "word": "quatsch"
+          }
+        ],
+        "text": " ach quatsch"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 302.412384,
+        "result": [
+          {
+            "end": 1068.568875,
+            "start": 1068.058875,
+            "word": "baldus"
+          },
+          {
+            "end": 1069.528875,
+            "start": 1069.138875,
+            "word": "geh"
+          },
+          {
+            "end": 1069.888875,
+            "start": 1069.528875,
+            "word": "jetzt"
+          },
+          {
+            "end": 1070.068875,
+            "start": 1069.888875,
+            "word": "vielleicht"
+          },
+          {
+            "end": 1070.428875,
+            "start": 1070.068875,
+            "word": "ap"
+          }
+        ],
+        "text": "baldus geh jetzt vielleicht ap"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 185.535583,
+        "result": [
+          {
+            "end": 1079.998875,
+            "start": 1079.668875,
+            "word": "hey"
+          },
+          {
+            "end": 1080.148875,
+            "start": 1079.998875,
+            "word": "die"
+          },
+          {
+            "end": 1080.418875,
+            "start": 1080.148875,
+            "word": "ult"
+          },
+          {
+            "end": 1080.838875,
+            "start": 1080.418875,
+            "word": "oder"
+          }
+        ],
+        "text": " hey die ult oder"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 108.91156,
+        "result": [
+          {
+            "end": 1153.948875,
+            "start": 1153.678875,
+            "word": "er"
+          },
+          {
+            "end": 1154.458875,
+            "start": 1154.218875,
+            "word": "hat"
+          },
+          {
+            "end": 1155.088875,
+            "start": 1154.458875,
+            "word": "geblizt"
+          }
+        ],
+        "text": " er hat geblizt"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 48.274628,
+        "result": [
+          {
+            "end": 1169.668875,
+            "start": 1169.188875,
+            "word": "okay"
+          }
+        ],
+        "text": "okay"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 615.137939,
+        "result": [
+          {
+            "end": 1188.718875,
+            "start": 1188.478875,
+            "word": "das"
+          },
+          {
+            "end": 1189.198875,
+            "start": 1188.718875,
+            "word": "laufende"
+          },
+          {
+            "end": 1189.888875,
+            "start": 1189.198875,
+            "word": "system"
+          }
+        ],
+        "text": "das laufende system"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 637.170776,
+        "result": [
+          {
+            "end": 1204.288875,
+            "start": 1204.138875,
+            "word": "wo"
+          },
+          {
+            "end": 1204.408875,
+            "start": 1204.288875,
+            "word": "ist"
+          },
+          {
+            "end": 1204.498875,
+            "start": 1204.408875,
+            "word": "der"
+          },
+          {
+            "end": 1205.008875,
+            "start": 1204.498875,
+            "word": "köder"
+          },
+          {
+            "end": 1205.428875,
+            "start": 1205.248875,
+            "word": "oh"
+          },
+          {
+            "end": 1205.558875,
+            "start": 1205.428875,
+            "word": "hier"
+          },
+          {
+            "end": 1205.638875,
+            "start": 1205.558875,
+            "word": "ist"
+          },
+          {
+            "end": 1205.938875,
+            "start": 1205.638875,
+            "word": "köder"
+          },
+          {
+            "end": 1206.268875,
+            "start": 1205.938875,
+            "word": "falls"
+          },
+          {
+            "end": 1206.658875,
+            "start": 1206.268875,
+            "word": "der"
+          },
+          {
+            "end": 1211.188875,
+            "start": 1206.658875,
+            "word": "support"
+          },
+          {
+            "end": 1211.188875,
+            "start": 1206.658875,
+            "word": "kommt"
+          }
+        ],
+        "text": " wo ist der köder oh hier ist köder falls der support kommt"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 267.557098,
+        "result": [
+          {
+            "end": 1212.612134,
+            "start": 1212.102134,
+            "word": "jaja"
+          },
+          {
+            "end": 1214.682134,
+            "start": 1214.382134,
+            "word": "alles"
+          },
+          {
+            "end": 1215.252134,
+            "start": 1214.682134,
+            "word": "easy"
+          },
+          {
+            "end": 1215.252134,
+            "start": 1214.682134,
+            "word": "alles"
+          },
+          {
+            "end": 1215.252134,
+            "start": 1214.682134,
+            "word": "einfach"
+          }
+        ],
+        "text": " jaja alles easy alles einfach"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 86.958397,
+        "result": [
+          {
+            "end": 1275.492134,
+            "start": 1275.312134,
+            "word": "oh"
+          },
+          {
+            "end": 1275.732134,
+            "start": 1275.492134,
+            "word": "mein"
+          },
+          {
+            "end": 1276.002134,
+            "start": 1275.732134,
+            "word": "gott"
+          }
+        ],
+        "text": " oh mein gott"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 309.781433,
+        "result": [
+          {
+            "end": 1287.072134,
+            "start": 1286.772134,
+            "word": "wenn"
+          },
+          {
+            "end": 1287.432134,
+            "start": 1287.072134,
+            "word": "du"
+          },
+          {
+            "end": 1288.122134,
+            "start": 1287.972134,
+            "word": "dir"
+          },
+          {
+            "end": 1288.362134,
+            "start": 1288.122134,
+            "word": "mühe"
+          },
+          {
+            "end": 1288.752134,
+            "start": 1288.362134,
+            "word": "gibst"
+          },
+          {
+            "end": 1290.102134,
+            "start": 1289.652134,
+            "word": "schade"
+          },
+          {
+            "end": 1290.882134,
+            "start": 1290.552134,
+            "word": "ok"
+          }
+        ],
+        "text": " wenn du dir mühe gibst schade ok"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 56.326683,
+        "result": [
+          {
+            "end": 1295.652134,
+            "start": 1294.992134,
+            "word": "achso"
+          }
+        ],
+        "text": " achso"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 187.949524,
+        "result": [
+          {
+            "end": 1299.672134,
+            "start": 1299.162134,
+            "word": "jetzt"
+          },
+          {
+            "end": 1299.972134,
+            "start": 1299.672134,
+            "word": "hol"
+          },
+          {
+            "end": 1300.212134,
+            "start": 1300.032134,
+            "word": "ich"
+          },
+          {
+            "end": 1300.332134,
+            "start": 1300.212134,
+            "word": "mir"
+          },
+          {
+            "end": 1300.692134,
+            "start": 1300.332134,
+            "word": "nur"
+          },
+          {
+            "end": 1300.692134,
+            "start": 1300.332134,
+            "word": "für"
+          },
+          {
+            "end": 1300.692134,
+            "start": 1300.332134,
+            "word": "dich"
+          }
+        ],
+        "text": " jetzt hol ich mir nur für dich"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 406.242462,
+        "result": [
+          {
+            "end": 1303.722134,
+            "start": 1303.212134,
+            "word": "oh"
+          },
+          {
+            "end": 1304.322134,
+            "start": 1303.752134,
+            "word": "feeder"
+          },
+          {
+            "end": 1305.732134,
+            "start": 1304.952134,
+            "word": "feeder"
+          },
+          {
+            "end": 1308.402134,
+            "start": 1308.252134,
+            "word": "die"
+          },
+          {
+            "end": 1308.702134,
+            "start": 1308.402134,
+            "word": "kurve"
+          },
+          {
+            "end": 1308.882134,
+            "start": 1308.702134,
+            "word": "geht"
+          },
+          {
+            "end": 1309.152134,
+            "start": 1308.882134,
+            "word": "nach"
+          },
+          {
+            "end": 1309.962134,
+            "start": 1309.152134,
+            "word": "unten"
+          }
+        ],
+        "text": " oh feeder feeder die kurve geht nach unten"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 247.705582,
+        "result": [
+          {
+            "end": 1318.272134,
+            "start": 1318.062134,
+            "word": "ja"
+          },
+          {
+            "end": 1318.452134,
+            "start": 1318.272134,
+            "word": "das"
+          },
+          {
+            "end": 1318.842134,
+            "start": 1318.452134,
+            "word": "wars"
+          },
+          {
+            "end": 1320.012134,
+            "start": 1319.802134,
+            "word": "das"
+          },
+          {
+            "end": 1320.372134,
+            "start": 1320.012134,
+            "word": "wars"
+          }
+        ],
+        "text": " ja das wars das wars"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 126.535698,
+        "result": [
+          {
+            "end": 1363.122134,
+            "start": 1362.762134,
+            "word": "ok"
+          },
+          {
+            "end": 1364.382134,
+            "start": 1363.962134,
+            "word": "aldi"
+          }
+        ],
+        "text": " ok aldi"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 418.219269,
+        "result": [
+          {
+            "end": 1397.292134,
+            "start": 1396.572134,
+            "word": "den"
+          },
+          {
+            "end": 1398.072134,
+            "start": 1397.292134,
+            "word": "baron"
+          },
+          {
+            "end": 1399.762134,
+            "start": 1398.342134,
+            "word": "gekraftet"
+          },
+          {
+            "end": 1402.272134,
+            "start": 1402.152134,
+            "word": "der"
+          },
+          {
+            "end": 1402.902134,
+            "start": 1402.272134,
+            "word": "waldmann"
+          }
+        ],
+        "text": "den baron gekraftet der waldmann"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 232.401306,
+        "result": [
+          {
+            "end": 1404.342134,
+            "start": 1404.132134,
+            "word": "hat"
+          },
+          {
+            "end": 1404.672134,
+            "start": 1404.342134,
+            "word": "jemand"
+          },
+          {
+            "end": 1404.822134,
+            "start": 1404.672134,
+            "word": "den"
+          },
+          {
+            "end": 1405.302134,
+            "start": 1404.822134,
+            "word": "förster"
+          },
+          {
+            "end": 1407.342134,
+            "start": 1405.302134,
+            "word": "gerufen"
+          },
+          {
+            "end": 1408.062134,
+            "start": 1407.702134,
+            "word": "oh"
+          }
+        ],
+        "text": " hat jemand den förster gerufen oh"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 137.269196,
+        "result": [
+          {
+            "end": 1415.232134,
+            "start": 1415.052134,
+            "word": "so"
+          },
+          {
+            "end": 1415.352134,
+            "start": 1415.232134,
+            "word": "der"
+          },
+          {
+            "end": 1415.682134,
+            "start": 1415.352134,
+            "word": "xerath"
+          },
+          {
+            "end": 1415.832134,
+            "start": 1415.682134,
+            "word": "hat"
+          },
+          {
+            "end": 1416.492134,
+            "start": 1415.832134,
+            "word": "geblitzt"
+          }
+        ],
+        "text": " so der xerath hat geblitzt"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 479.341705,
+        "result": [
+          {
+            "end": 1423.002134,
+            "start": 1422.882134,
+            "word": "du"
+          },
+          {
+            "end": 1423.362134,
+            "start": 1423.002134,
+            "word": "meinst"
+          },
+          {
+            "end": 1423.602134,
+            "start": 1423.362134,
+            "word": "deine"
+          },
+          {
+            "end": 1425.102134,
+            "start": 1423.602134,
+            "word": "bildwiederholungsrate"
+          },
+          {
+            "end": 1426.002134,
+            "start": 1425.402134,
+            "word": "verringert"
+          },
+          {
+            "end": 1426.392134,
+            "start": 1426.002134,
+            "word": "sich"
+          }
+        ],
+        "text": " du meinst deine bildwiederholungsrate verringert sich"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 142.613159,
+        "result": [
+          {
+            "end": 1447.122134,
+            "start": 1446.912134,
+            "word": "doch"
+          },
+          {
+            "end": 1447.392134,
+            "start": 1447.122134,
+            "word": "damit"
+          },
+          {
+            "end": 1447.452134,
+            "start": 1447.392134,
+            "word": "ich"
+          },
+          {
+            "end": 1447.752134,
+            "start": 1447.452134,
+            "word": "schneller"
+          },
+          {
+            "end": 1447.932134,
+            "start": 1447.752134,
+            "word": "da"
+          },
+          {
+            "end": 1448.232134,
+            "start": 1447.932134,
+            "word": "bin"
+          }
+        ],
+        "text": " doch damit ich schneller da bin"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 119.931931,
+        "result": [
+          {
+            "end": 1452.672134,
+            "start": 1452.342134,
+            "word": "ja"
+          }
+        ],
+        "text": " ja"
+      }
+    ]
+  },
+  {
+    "alternatives": [
+      {
+        "confidence": 159.610077,
+        "result": [
+          {
+            "end": 1525.842134,
+            "start": 1525.542134,
+            "word": "diese"
+          },
+          {
+            "end": 1526.502134,
+            "start": 1525.842134,
+            "word": "ruhmreiche"
+          },
+          {
+            "end": 1526.982134,
+            "start": 1526.502134,
+            "word": "haut"
+          }
+        ],
+        "text": " diese ruhmreiche haut"
+      }
+    ]
+  }
+]
