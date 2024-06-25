@@ -12,7 +12,7 @@
     <br />
     Supervisors: Shivam Agarwal & Cedric Krause
     <br />
-    <a href="https://www.uni-bamberg.de/vis/"><strong>Zur Website des Lehrstuhls »</strong></a>
+    <a href="https://www.uni-bamberg.de/vis/"><strong>Website of the academic chair »</strong></a>
     <br />
     <br />
     <a href="#installation">Installation</a>
@@ -38,6 +38,13 @@
   ```sh
   npm install
   ```
+3. Create file named ".env" in the root directory and paste in:
+  ```sh
+  RIOT_API_KEY=
+  ```
+4. Login <a href="https://developer.riotgames.com/">here</a> and generate & copy a generated token
+5. Paste this token after the '=' in the .env file
+<br />_Example: RIOT_API_KEY=RGAPI-187b27b8-1905-44e2-88dd-24f4e214e994_
 <p align="right">(<a href="#top">back to top</a>)</p>
   
   
