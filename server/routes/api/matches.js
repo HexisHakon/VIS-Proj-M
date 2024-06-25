@@ -1,15 +1,13 @@
 const { Router } = require('express');
-const axios = require('axios');
+const match = require('../../matches/wissenscharbeit/Stage2_1v4.json')
+const timeline = require('../../matches/wissenscharbeit/Stage2_1v4_timeline.json')
 require('dotenv').config();
 
 const router = Router();
-const matchURL = "https://europe.api.riotgames.com/lol/match/v5/matches/";
-
 
 router.get('/:id', async (req,res) => {
     try{
-        const match = await axios.get(`${matchURL}${req.params.id}?api_key=${process.env.RIOT_API_KEY}`)
-        res.status(200).send(match.data);
+        res.status(200).send(match);
     } catch(err){
         return res.status(404).send("Match does not exist.")
     }
@@ -17,8 +15,7 @@ router.get('/:id', async (req,res) => {
 })
 .get('/:id/timeline', async (req,res) => {
     try{
-        const match = await axios.get(`${matchURL}${req.params.id}/timeline?api_key=${process.env.RIOT_API_KEY}`)
-        res.status(200).send(match.data);
+        res.status(200).send(timeline);
     } catch(err){
         return res.status(404).send("Match does not exist.")
     }

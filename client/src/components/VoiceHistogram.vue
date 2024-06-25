@@ -127,7 +127,7 @@ export default {
           .attr("y", height + 35)
           .attr("fill", "white")
           .attr("font-size", "10px")
-          .text("Zeit in 10s Intervallen")
+          .text("Time in 10s intervals")
 
           container.append("text")
           .attr("text-anchor", "middle")
@@ -135,7 +135,7 @@ export default {
           .attr("y", -10)
           .attr("fill", "white")
           .attr("font-size", "10px")
-          .text("Wortanzahl")
+          .text("Word count")
       },
       selectStartingPoint() {
         this.$store.commit('updateSelectBarPressed')

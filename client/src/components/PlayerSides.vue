@@ -3,12 +3,12 @@
       <div class="side-wrapper bg roundEdges box-shadow" :id="this.$store.state.matchData.teams[0].win ? 'win-blue' : 'loss-blue'">
         <div class="active active-left"></div>
         <div id="blueside" class="circle"></div>
-        <span>BLAUES TEAM</span>
+        <span>BLUE TEAM</span>
       </div>
       <div class="side-wrapper bg roundEdges box-shadow" :id="this.$store.state.matchData.teams[1].win ? 'win-red' : 'loss-red'">
         <div class="active active-right"></div>
         <div id="redside" class="circle"></div>
-        <span>ROTES TEAM</span>
+        <span>RED TEAM</span>
       </div>
   </div>
 </template>

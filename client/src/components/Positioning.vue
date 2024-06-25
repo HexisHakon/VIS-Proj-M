@@ -3,13 +3,13 @@
     <div class="row-positioning">
       <div class="flex-1 roundEdges">
         <div id="event-graph-panel">
-          <span id="barchart-title">Keine Sprachaktivität angezeigt</span>
+          <span id="barchart-title">No voice activity displayed</span>
           <VoiceHistogram :selectedPlayers="this.selectedPlayersArray"/>
           <Timeline :selectedPlayers="this.selectedPlayersArray"/>
         </div>
       </div>
       <div class="flex-1 roundEdges map-panel">
-        <span id="wordcloud-header">Schlagwortwolke verwendeter Begriffe der selektierten Spieler</span>
+        <span id="wordcloud-header">Word cloud of terms used by the selected players</span>
         <div class="wordcloud-wrapper" id="wordcloud-full-wrapper">
           <div id="wordcloud-container" v-if="this.$store.state.wordListArray[8].length > 0 && this.wordcloudWidth > 0">
             <Wordcloud :selectedPlayers="this.selectedPlayersArray" :textArray="this.$store.state.wordListArray" :width="this.wordcloudWidth" :height="this.wordcloudHeight" :id="1"/>
@@ -51,10 +51,10 @@ export default {
       let names = ''
       for(let index in this.selectedPlayersArray){
         if(!this.selectedPlayersArray[index]) continue
-        names += (this.$store.state.matchData.participants[index].summonerName + ' / ')
+        names += (/* this.$store.state.matchData.participants[index].summonerName */ index<5?`B${parseInt(index)+1} / `:`R${parseInt(index)%5 + 1} / `)
       }
       names = names.slice(0,names.length - 3)
-      document.getElementById("barchart-title").innerHTML = `Sprachaktivität von ${names}`
+      document.getElementById("barchart-title").innerHTML = `Voice activity from ${names}`
     }
   },
   mounted() {

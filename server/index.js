@@ -78,10 +78,10 @@ client.on('interactionCreate', async interaction => {
     }
 });
 
-// 'ready'-action
+/* // 'ready'-action
 client.once('ready', () => {
     console.log("Bot online!");
 })
 
 // Login on server
-client.login(process.env.DISCORD_TOKEN);
+client.login(process.env.DISCORD_TOKEN); */

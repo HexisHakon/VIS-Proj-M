@@ -4,13 +4,12 @@ import axios from 'axios'
 import Dashboard from './Dashboard.vue'
 import 'es6-promise'
 import 'babel-polyfill'
-import sentiment from 'sentiment'
 
 axios.get('https://ddragon.leagueoflegends.com/api/versions.json').then(result => {
     const patchVersion = result.data[0]
 
-    // EUW1_5774555921, EUW1_5774426295, EUW1_5774756103
-    const requestMatchUrl = "http://localhost:5500/routes/api/matches/EUW1_5774555921";
+    // EUW1_6942386737
+    const requestMatchUrl = "http://localhost:5500/routes/api/matches/EUW1_6942386737";
     const requestMatchTimelineUrl = requestMatchUrl + "/timeline";
     const requestItemUrl = `http://ddragon.leagueoflegends.com/cdn/${patchVersion}/data/en_US/item.json`;
     const imageBaseUrl = `http://ddragon.leagueoflegends.com/cdn/${patchVersion}/img/champion/`
