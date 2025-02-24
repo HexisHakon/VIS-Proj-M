@@ -201,7 +201,7 @@
           />
           <span class="legend-fontsize">5+</span>
         </div>
-        <span class="legend-fontsize">Objectives destroyed*</span>
+        <span class="legend-fontsize">Buildings destroyed*</span>
       </div>
       <div class="legend-entry">
         <svg
@@ -388,10 +388,7 @@ export default {
        */
       let xScale = d3
         .scaleLinear()
-        .domain([
-          0,
-          Math.floor((this.$store.state.matchData.gameDuration / 60.0) * 6),
-        ])
+        .domain([0,Math.floor((this.$store.state.matchData.gameDuration / 60.0) * 6),])
         .range([1, width]);
 
         // SVG Objekt erhält X-Achse
@@ -399,17 +396,9 @@ export default {
         .append("g")
         .classed("x-axis", true)
         .attr("transform", "translate(0," + height + ")")
-        .call(
-          d3
-            .axisBottom(xScale)
-            .ticks(
-              Math.ceil((this.$store.state.matchData.gameDuration / 60.0) * 6) +
-                1
-            )
-            .tickFormat(function (d, i) {
-              return i > 0 && i % 30 === 0 ? `${d / 6} min` : null;
-            })
-        )
+        .call(d3.axisBottom(xScale)
+                .ticks(Math.ceil((this.$store.state.matchData.gameDuration / 60.0) * 6) + 1)
+                .tickFormat(function (d, i) {return i > 0 && i % 30 === 0 ? `${d / 6} min` : null;}))
         .selectAll("text")
         .style("text-anchor", "middle");
 
@@ -464,7 +453,9 @@ export default {
         .range([0, height])
         .domain(playerNamesYLabel.map((x) => x[0]));
 
-      container.append("g").classed("y-axis", true).call(d3.axisLeft(yScale));
+      container.append("g")
+                .classed("y-axis", true)
+                .call(d3.axisLeft(yScale));
 
       // SVG Paths
       let eyePath = `M2404 4080 c-846 -49 -1644 -502 -2280 -1294 -166 -207 -166 -244 1
@@ -644,10 +635,7 @@ l53 -34 -79 -122 c-43 -68 -84 -122 -90 -120 -18 4 -480 296 -481 303 0 8 151
           .attr("width", width)
           .attr("height", yScale.bandwidth() / 2.5)
           .attr("x", 0)
-          .attr(
-            "y",
-            yScale(playerNamesYLabel[startingCount][0]) + yScale.bandwidth() / 2
-          );
+          .attr("y",yScale(playerNamesYLabel[startingCount][0]) + yScale.bandwidth() / 2);
 
         container
           .append("rect")
@@ -656,11 +644,7 @@ l53 -34 -79 -122 c-43 -68 -84 -122 -90 -120 -18 4 -480 296 -481 303 0 8 151
           .attr("width", width)
           .attr("height", yScale.bandwidth() / 2.5)
           .attr("x", 0)
-          .attr(
-            "y",
-            yScale(playerNamesYLabel[startingCount][0]) +
-              yScale.bandwidth() / 10
-          );
+          .attr("y",yScale(playerNamesYLabel[startingCount][0]) + yScale.bandwidth() / 10);
 
         container
           .append("path")
@@ -669,18 +653,9 @@ l53 -34 -79 -122 c-43 -68 -84 -122 -90 -120 -18 4 -480 296 -481 303 0 8 151
           .attr("fill", "rgba(255,255,255,0)")
           .attr("stroke", "rgba(255,255,255,0.3)")
           .attr("stroke-width", 1.5)
-          .attr(
-            "d",
-            d3
-              .line()
-              .x((d) => xScale(d.x))
-              .y(
-                (d) =>
-                  yScale(playerNamesYLabel[startingCount][0]) +
-                  yScale.bandwidth() / 2 -
-                  this.calcSize(d.y) * 4
-              )
-          );
+          .attr("d",d3.line()
+                      .x((d) => xScale(d.x))
+                      .y((d) => yScale(playerNamesYLabel[startingCount][0]) + yScale.bandwidth() / 2 - this.calcSize(d.y) * 4));
 
         /* container.append("path")
             .classed('borders',true)
@@ -693,28 +668,13 @@ l53 -34 -79 -122 c-43 -68 -84 -122 -90 -120 -18 4 -480 296 -481 303 0 8 151
         let group = container
           .append("g")
           .classed(`player${parseInt(player) + 1}`, true);
-        let KillEvents = this.eventGraph[player].filter(
-          (entry) => entry[0] == "CHAMPION_KILL_KILL"
-        );
-        let DeathEvents = this.eventGraph[player].filter(
-          (entry) => entry[0] == "CHAMPION_KILL_DEATH"
-        );
-        let ItemEvents = this.eventGraph[player].filter(
-          (entry) => entry[0] == "ITEM_PURCHASED"
-        );
-        let WardEvents = this.eventGraph[player].filter(
-          (entry) => entry[0] == "WARD_PLACED"
-        );
-        let TowerEvents = this.eventGraph[player].filter(
-          (entry) => entry[0] == "BUILDING_KILL"
-        );
-        let EliteMonsterEvents_Drake = this.eventGraph[player].filter(
-          (entry) => entry[0] == "ELITE_MONSTER_KILL" && entry[4] == "DRAGON"
-        );
-        let EliteMonsterEvents_Baron = this.eventGraph[player].filter(
-          (entry) =>
-            entry[0] == "ELITE_MONSTER_KILL" && entry[4] == "BARON_NASHOR"
-        );
+        let KillEvents = this.eventGraph[player].filter((entry) => entry[0] == "CHAMPION_KILL_KILL");
+        let DeathEvents = this.eventGraph[player].filter((entry) => entry[0] == "CHAMPION_KILL_DEATH");
+        let ItemEvents = this.eventGraph[player].filter((entry) => entry[0] == "ITEM_PURCHASED");
+        let WardEvents = this.eventGraph[player].filter((entry) => entry[0] == "WARD_PLACED");
+        let TowerEvents = this.eventGraph[player].filter((entry) => entry[0] == "BUILDING_KILL");
+        let EliteMonsterEvents_Drake = this.eventGraph[player].filter((entry) => entry[0] == "ELITE_MONSTER_KILL" && entry[4] == "DRAGON");
+        let EliteMonsterEvents_Baron = this.eventGraph[player].filter((entry) => entry[0] == "ELITE_MONSTER_KILL" && entry[4] == "BARON_NASHOR");
 
         group
           .append("g")
@@ -725,16 +685,8 @@ l53 -34 -79 -122 c-43 -68 -84 -122 -90 -120 -18 4 -480 296 -481 303 0 8 151
           .append("svg")
           .attr("width", (d) => `${this.calcSize(d[1])}px`)
           .attr("height", (d) => `${this.calcSize(d[1])}px`)
-          .attr("x", (d) => {
-            return xScale(d[2] / 10000) - this.calcSize(d[1]) / 2;
-          })
-          .attr(
-            "y",
-            (d) =>
-              yScale(playerNamesYLabel[startingCount][0]) +
-              yScale.bandwidth() / 2 -
-              this.calcSize(d[1]) / 2
-          )
+          .attr("x", (d) => {return xScale(d[2] / 10000) - this.calcSize(d[1]) / 2;})
+          .attr("y", (d) => yScale(playerNamesYLabel[startingCount][0]) + yScale.bandwidth() / 2 - this.calcSize(d[1]) / 2)
           .attr("viewBox", "0 0 512 512")
           .attr("preserveAspectRatio", "xMidYMid meet")
           .append("g")
@@ -754,16 +706,8 @@ l53 -34 -79 -122 c-43 -68 -84 -122 -90 -120 -18 4 -480 296 -481 303 0 8 151
           .append("svg")
           .attr("width", (d) => `${this.calcSize(d[1])}px`)
           .attr("height", (d) => `${this.calcSize(d[1])}px`)
-          .attr("x", (d) => {
-            return xScale(d[2] / 10000) - this.calcSize(d[1]) / 2;
-          })
-          .attr(
-            "y",
-            (d) =>
-              yScale(playerNamesYLabel[startingCount][0]) +
-              yScale.bandwidth() / 2 -
-              this.calcSize(d[1]) / 2
-          )
+          .attr("x", (d) => {return xScale(d[2] / 10000) - this.calcSize(d[1]) / 2;})
+          .attr("y", (d) => yScale(playerNamesYLabel[startingCount][0]) + yScale.bandwidth() / 2 - this.calcSize(d[1]) / 2)
           .attr("viewBox", "0 0 512 512")
           .attr("preserveAspectRatio", "xMidYMid meet")
           .append("g")
@@ -783,16 +727,8 @@ l53 -34 -79 -122 c-43 -68 -84 -122 -90 -120 -18 4 -480 296 -481 303 0 8 151
           .append("svg")
           .attr("width", (d) => `${this.calcSize(d[1])}px`)
           .attr("height", (d) => `${this.calcSize(d[1])}px`)
-          .attr("x", (d) => {
-            return xScale(d[2] / 10000) - this.calcSize(d[1]) / 2;
-          })
-          .attr(
-            "y",
-            (d) =>
-              yScale(playerNamesYLabel[startingCount][0]) +
-              yScale.bandwidth() / 2 -
-              this.calcSize(d[1]) / 2
-          )
+          .attr("x", (d) => {return xScale(d[2] / 10000) - this.calcSize(d[1]) / 2;})
+          .attr("y", (d) => yScale(playerNamesYLabel[startingCount][0]) + yScale.bandwidth() / 2 - this.calcSize(d[1]) / 2)
           .attr("viewBox", "0 0 512 512")
           .attr("preserveAspectRatio", "xMidYMid meet")
           .append("g")
@@ -812,16 +748,8 @@ l53 -34 -79 -122 c-43 -68 -84 -122 -90 -120 -18 4 -480 296 -481 303 0 8 151
           .append("svg")
           .attr("width", (d) => `${this.calcSize(d[1])}px`)
           .attr("height", (d) => `${this.calcSize(d[1])}px`)
-          .attr("x", (d) => {
-            return xScale(d[2] / 10000) - this.calcSize(d[1]) / 2;
-          })
-          .attr(
-            "y",
-            (d) =>
-              yScale(playerNamesYLabel[startingCount][0]) +
-              yScale.bandwidth() / 2 -
-              this.calcSize(d[1]) / 2
-          )
+          .attr("x", (d) => {return xScale(d[2] / 10000) - this.calcSize(d[1]) / 2;})
+          .attr("y", (d) => yScale(playerNamesYLabel[startingCount][0]) + yScale.bandwidth() / 2 - this.calcSize(d[1]) / 2)
           .attr("viewBox", "0 0 512 512")
           .attr("preserveAspectRatio", "xMidYMid meet")
           .append("g")
@@ -841,16 +769,8 @@ l53 -34 -79 -122 c-43 -68 -84 -122 -90 -120 -18 4 -480 296 -481 303 0 8 151
           .append("svg")
           .attr("width", (d) => `${this.calcSize(d[1])}px`)
           .attr("height", (d) => `${this.calcSize(d[1])}px`)
-          .attr("x", (d) => {
-            return xScale(d[2] / 10000) - this.calcSize(d[1]) / 2;
-          })
-          .attr(
-            "y",
-            (d) =>
-              yScale(playerNamesYLabel[startingCount][0]) +
-              yScale.bandwidth() / 2 -
-              this.calcSize(d[1]) / 2
-          )
+          .attr("x", (d) => {return xScale(d[2] / 10000) - this.calcSize(d[1]) / 2;})
+          .attr("y",(d) => yScale(playerNamesYLabel[startingCount][0]) + yScale.bandwidth() / 2 - this.calcSize(d[1]) / 2)
           .attr("viewBox", "0 0 512 512")
           .attr("preserveAspectRatio", "xMidYMid meet")
           .append("g")
@@ -870,16 +790,8 @@ l53 -34 -79 -122 c-43 -68 -84 -122 -90 -120 -18 4 -480 296 -481 303 0 8 151
           .append("svg")
           .attr("width", (d) => `${this.calcSize(d[1] + 0.4)}px`)
           .attr("height", (d) => `${this.calcSize(d[1] + 0.4)}px`)
-          .attr("x", (d) => {
-            return xScale(d[2] / 10000) - this.calcSize(d[1]) / 2;
-          })
-          .attr(
-            "y",
-            (d) =>
-              yScale(playerNamesYLabel[startingCount][0]) +
-              yScale.bandwidth() / 2 -
-              this.calcSize(d[1] + 0.4) / 2
-          )
+          .attr("x", (d) => {return xScale(d[2] / 10000) - this.calcSize(d[1]) / 2;})
+          .attr("y",(d) => yScale(playerNamesYLabel[startingCount][0]) + yScale.bandwidth() / 2 - this.calcSize(d[1] + 0.4) / 2)
           .attr("viewBox", "0 0 512 512")
           .attr("preserveAspectRatio", "xMidYMid meet")
           .append("g")
@@ -899,16 +811,8 @@ l53 -34 -79 -122 c-43 -68 -84 -122 -90 -120 -18 4 -480 296 -481 303 0 8 151
           .append("svg")
           .attr("width", (d) => `${this.calcSize(d[1] + 0.4)}px`)
           .attr("height", (d) => `${this.calcSize(d[1] + 0.4)}px`)
-          .attr("x", (d) => {
-            return xScale(d[2] / 10000) - this.calcSize(d[1]) / 2;
-          })
-          .attr(
-            "y",
-            (d) =>
-              yScale(playerNamesYLabel[startingCount][0]) +
-              yScale.bandwidth() / 2 -
-              this.calcSize(d[1] + 0.4) / 2
-          )
+          .attr("x", (d) => {return xScale(d[2] / 10000) - this.calcSize(d[1]) / 2;})
+          .attr("y",(d) => yScale(playerNamesYLabel[startingCount][0]) + yScale.bandwidth() / 2 - this.calcSize(d[1] + 0.4) / 2)
           .attr("viewBox", "0 0 512 512")
           .attr("preserveAspectRatio", "xMidYMid meet")
           .append("g")
@@ -960,7 +864,7 @@ l53 -34 -79 -122 c-43 -68 -84 -122 -90 -120 -18 4 -480 296 -481 303 0 8 151
              */
           let hoverDivBounds = document.getElementsByClassName("hover-div")[0].getBoundingClientRect();
             // x-Position des Cursors wird angepasst
-            document.getElementById("timelineSelect").attributes.x.nodeValue = evt.clientX - hoverDivBounds.x;
+          document.getElementById("timelineSelect").attributes.x.nodeValue = evt.clientX - hoverDivBounds.x;
             // y-Position des Cursors wird angepasst
           document.getElementById("timelineSelect").attributes.y.nodeValue = Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth()) * yScale.bandwidth();
         })
@@ -988,32 +892,10 @@ l53 -34 -79 -122 c-43 -68 -84 -122 -90 -120 -18 4 -480 296 -481 303 0 8 151
             .attr("x", 0)
             .attr("id", "eventsTextInLens")
             .attr("transform", "");
-          let eventGraphindex = playerNamesYLabelfull
-            .map((x) => x[0])
-            .indexOf(
-              playerNamesYLabel[
-                Math.floor(
-                  (evt.clientY - hoverDivBounds.y) / yScale.bandwidth()
-                )
-              ][0]
-            );
-          let selectedEvents = eventGraph[eventGraphindex].filter(
-            (x) =>
-              Math.floor(x[2] / 10000) <
-                (Math.floor(xScale.invert(evt.clientX - hoverDivBounds.x)) < 0
-                  ? 0
-                  : Math.floor(xScale.invert(evt.clientX - hoverDivBounds.x))) +
-                  selectedTimerangeCount / 2 &&
-              Math.floor(x[2] / 10000) >=
-                (Math.floor(xScale.invert(evt.clientX - hoverDivBounds.x)) < 0
-                  ? 0
-                  : Math.floor(xScale.invert(evt.clientX - hoverDivBounds.x))) -
-                  selectedTimerangeCount / 2
-          );
+          let eventGraphindex = playerNamesYLabelfull.map((x) => x[0]).indexOf(playerNamesYLabel[Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())][0]);
+          let selectedEvents = eventGraph[eventGraphindex].filter((x) => Math.floor(x[2] / 10000) < (Math.floor(xScale.invert(evt.clientX - hoverDivBounds.x)) < 0 ? 0 : Math.floor(xScale.invert(evt.clientX - hoverDivBounds.x))) + selectedTimerangeCount / 2 && Math.floor(x[2] / 10000) >=(Math.floor(xScale.invert(evt.clientX - hoverDivBounds.x)) < 0 ? 0 : Math.floor(xScale.invert(evt.clientX - hoverDivBounds.x))) -selectedTimerangeCount / 2);
           for (let event in selectedEvents) {
-            let classname_of_eventgroup = `p${Math.floor(
-              (evt.clientY - hoverDivBounds.y) / yScale.bandwidth()
-            )}-eventgroup`;
+            let classname_of_eventgroup = `p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-eventgroup`;
             let info_group = eventGroup
               .append("g")
               .classed(classname_of_eventgroup, true);
@@ -1021,539 +903,183 @@ l53 -34 -79 -122 c-43 -68 -84 -122 -90 -120 -18 4 -480 296 -481 303 0 8 151
               case "CHAMPION_KILL_DEATH":
                 info_group
                   .append("image")
-                  .attr(
-                    "id",
-                    `p${Math.floor(
-                      (evt.clientY - hoverDivBounds.y) / yScale.bandwidth()
-                    )}-event-${event}-img`
-                  )
+                  .attr("id",`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}-img`)
                   .attr("x", 10)
-                  .attr(
-                    "y",
-                    (document.getElementsByClassName(classname_of_eventgroup)
-                      .length > 1
-                      ? parseInt(
-                          document.getElementById(
-                            `p${Math.floor(
-                              (evt.clientY - hoverDivBounds.y) /
-                                yScale.bandwidth()
-                            )}-event-${
-                              document.getElementsByClassName(
-                                classname_of_eventgroup
-                              ).length - 2
-                            }`
-                          ).attributes.y.nodeValue
-                        ) + 20
-                      : 20) - 15.5
-                  )
+                  .attr("y",(document.getElementsByClassName(classname_of_eventgroup).length > 1 ? parseInt(document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${document.getElementsByClassName(classname_of_eventgroup).length - 2}`).attributes.y.nodeValue) + 20: 20) - 15.5)
                   .attr("height", 22)
                   .attr("width", 22)
-                  .attr(
-                    "href",
-                    `http://ddragon.leagueoflegends.com/cdn/${currentPatch}/img/champion/${(() => {
-                      if(playerNamesYLabelfull[
-                        selectedEvents[event][3][0].victimId - 1
-                      ][1] == "Jarvaniv"){return "JarvanIV"}
-                      return playerNamesYLabelfull[
-                        selectedEvents[event][3][0].victimId - 1
-                      ][1]
-                    })()
-                    }.png`
-                  );
+                  .attr("href",`http://ddragon.leagueoflegends.com/cdn/${currentPatch}/img/champion/${(() => {
+                      if(playerNamesYLabelfull[selectedEvents[event][3][0].victimId - 1][1] == "Jarvaniv"){return "JarvanIV"}
+                      return playerNamesYLabelfull[selectedEvents[event][3][0].victimId - 1][1]})()}.png`);
                 info_group
                   .append("text")
-                  .attr(
-                    "id",
-                    `p${Math.floor(
-                      (evt.clientY - hoverDivBounds.y) / yScale.bandwidth()
-                    )}-event-${event}`
-                  )
+                  .attr("id",`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}`)
                   .attr("x", 10 + 6 + 20)
-                  .attr(
-                    "y",
-                    document.getElementsByClassName(classname_of_eventgroup)
-                      .length > 1
-                      ? parseInt(
-                          document.getElementById(
-                            `p${Math.floor(
-                              (evt.clientY - hoverDivBounds.y) /
-                                yScale.bandwidth()
-                            )}-event-${
-                              document.getElementsByClassName(
-                                classname_of_eventgroup
-                              ).length - 2
-                            }`
-                          ).attributes.y.nodeValue
-                        ) + 20
-                      : 20
-                  )
+                  .attr("y",document.getElementsByClassName(classname_of_eventgroup).length > 1 ? parseInt(document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${document.getElementsByClassName(classname_of_eventgroup).length - 2}`).attributes.y.nodeValue) + 20 : 20)
                   .attr("font-size", font_size_in_lens)
                   .attr("fill", "white")
-                  .text(
-                    `${
-                      playerNamesYLabel[
-                        Math.floor(
-                          (evt.clientY - hoverDivBounds.y) / yScale.bandwidth()
-                        )
-                      ][0]
-                    } von `
-                  );
+                  .text(`${playerNamesYLabel[Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())][0]} killed by `);
                 info_group
                   .append("image")
-                  .attr(
-                    "id",
-                    `p${Math.floor(
-                      (evt.clientY - hoverDivBounds.y) / yScale.bandwidth()
-                    )}-event-${event}-img`
-                  )
-                  .attr(
-                    "x",
-                    10 +
-                      document
-                        .getElementById(
-                          `p${Math.floor(
-                            (evt.clientY - hoverDivBounds.y) /
-                              yScale.bandwidth()
-                          )}-event-${event}`
-                        )
-                        .getBoundingClientRect().width +
-                      6 +
-                      20
-                  )
-                  .attr(
-                    "y",
-                    (document.getElementsByClassName(classname_of_eventgroup)
-                      .length > 1
-                      ? parseInt(
-                          document.getElementById(
-                            `p${Math.floor(
-                              (evt.clientY - hoverDivBounds.y) /
-                                yScale.bandwidth()
-                            )}-event-${
-                              document.getElementsByClassName(
-                                classname_of_eventgroup
-                              ).length - 2
-                            }`
-                          ).attributes.y.nodeValue
-                        ) + 20
-                      : 20) - 15.5
-                  )
+                  .attr("id",`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}-img`)
+                  .attr("x",10 +document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) /yScale.bandwidth())}-event-${event}`).getBoundingClientRect().width + 6 + 20)
+                  .attr("y",(document.getElementsByClassName(classname_of_eventgroup).length > 1? parseInt(document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) /yScale.bandwidth())}-event-${document.getElementsByClassName(classname_of_eventgroup).length - 2}`).attributes.y.nodeValue) + 20 : 20) - 15.5)
                   .attr("height", 22)
                   .attr("width", 22)
-                  .attr(
-                    "href",
-                    `http://ddragon.leagueoflegends.com/cdn/${currentPatch}/img/champion/${(() => {
-                      if(playerNamesYLabelfull[
-                        selectedEvents[event][3][0].killerId - 1
-                      ][1] == "Jarvaniv"){return "JarvanIV"}
-                      return playerNamesYLabelfull[
-                        selectedEvents[event][3][0].killerId - 1
-                      ][1]
-                    })()
-                    }.png`
-                  );
-                info_group
+                  .attr("href",`http://ddragon.leagueoflegends.com/cdn/${currentPatch}/img/champion/${(() => {if(playerNamesYLabelfull[selectedEvents[event][3][0].killerId - 1][1] == "Jarvaniv"){return "JarvanIV"}return playerNamesYLabelfull[selectedEvents[event][3][0].killerId - 1][1]})()}.png`);
+                /* info_group
                   .append("text")
-                  .attr(
-                    "id",
-                    `p${Math.floor(
-                      (evt.clientY - hoverDivBounds.y) / yScale.bandwidth()
-                    )}-event-${event}-desc`
-                  )
-                  .attr(
-                    "x",
-                    10 +
-                      document
-                        .getElementById(
-                          `p${Math.floor(
-                            (evt.clientY - hoverDivBounds.y) /
-                              yScale.bandwidth()
-                          )}-event-${event}`
-                        )
-                        .getBoundingClientRect().width +
-                      6 +
-                      20 +
-                      6 +
-                      20
-                  )
-                  .attr(
-                    "y",
-                    document.getElementById(
-                      `p${Math.floor(
-                        (evt.clientY - hoverDivBounds.y) / yScale.bandwidth()
-                      )}-event-${event}`
-                    ).attributes.y.nodeValue
-                  )
+                  .attr("id",`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}-desc`)
+                  .attr("x",10 +document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) /yScale.bandwidth())}-event-${event}`).getBoundingClientRect().width +6 +20 +6 +20)
+                  .attr("y",document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}`).attributes.y.nodeValue)
                   .attr("font-size", font_size_in_lens)
                   .attr("fill", "white")
-                  .text(
-                    `${
-                      playerNamesYLabelfull[
-                        selectedEvents[event][3][0].killerId - 1
-                      ][0]
-                    } getötet`
-                  );
+                  .text(`${playerNamesYLabelfull[selectedEvents[event][3][0].killerId - 1][0]} getötet`); */
                 break;
               case "CHAMPION_KILL_KILL":
                 info_group
                   .append("image")
-                  .attr(
-                    "id",
-                    `p${Math.floor(
-                      (evt.clientY - hoverDivBounds.y) / yScale.bandwidth()
-                    )}-event-${event}-img`
-                  )
+                  .attr("id",`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}-img`)
                   .attr("x", 10)
-                  .attr(
-                    "y",
-                    (document.getElementsByClassName(classname_of_eventgroup)
-                      .length > 1
-                      ? parseInt(
-                          document.getElementById(
-                            `p${Math.floor(
-                              (evt.clientY - hoverDivBounds.y) /
-                                yScale.bandwidth()
-                            )}-event-${
-                              document.getElementsByClassName(
-                                classname_of_eventgroup
-                              ).length - 2
-                            }`
-                          ).attributes.y.nodeValue
-                        ) + 20
-                      : 20) - 15.5
-                  )
+                  .attr("y",(document.getElementsByClassName(classname_of_eventgroup).length > 1 ? parseInt(document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${document.getElementsByClassName(classname_of_eventgroup).length - 2}`).attributes.y.nodeValue) + 20 : 20) - 15.5)
                   .attr("height", 22)
                   .attr("width", 22)
-                  .attr(
-                    "href",
-                    `http://ddragon.leagueoflegends.com/cdn/${currentPatch}/img/champion/${(() => {
-                      if(playerNamesYLabelfull[
-                        selectedEvents[event][3][0].killerId - 1
-                      ][1] == "Jarvaniv"){return "JarvanIV"}
-                      return playerNamesYLabelfull[
-                        selectedEvents[event][3][0].killerId - 1
-                      ][1]
-                    })()
-                      
-                    }.png`
-                  );
+                  .attr("href",`http://ddragon.leagueoflegends.com/cdn/${currentPatch}/img/champion/${(() => {
+                      if(playerNamesYLabelfull[selectedEvents[event][3][0].killerId - 1][1] == "Jarvaniv"){return "JarvanIV"}
+                      return playerNamesYLabelfull[selectedEvents[event][3][0].killerId - 1][1]})()}.png`);
                 info_group
                   .append("text")
-                  .attr(
-                    "id",
-                    `p${Math.floor(
-                      (evt.clientY - hoverDivBounds.y) / yScale.bandwidth()
-                    )}-event-${event}`
-                  )
+                  .attr("id",`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}`)
                   .attr("x", 10 + 6 + 20)
-                  .attr(
-                    "y",
-                    document.getElementsByClassName(classname_of_eventgroup)
-                      .length > 1
-                      ? parseInt(
-                          document.getElementById(
-                            `p${Math.floor(
-                              (evt.clientY - hoverDivBounds.y) /
-                                yScale.bandwidth()
-                            )}-event-${
-                              document.getElementsByClassName(
-                                classname_of_eventgroup
-                              ).length - 2
-                            }`
-                          ).attributes.y.nodeValue
-                        ) + 20
-                      : 20
-                  )
+                  .attr("y",document.getElementsByClassName(classname_of_eventgroup).length > 1 ? parseInt(document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${document.getElementsByClassName(classname_of_eventgroup).length - 2}`).attributes.y.nodeValue) + 20 : 20)
                   .attr("font-size", font_size_in_lens)
                   .attr("fill", "white")
-                  .text(
-                    `${
-                      playerNamesYLabel[
-                        Math.floor(
-                          (evt.clientY - hoverDivBounds.y) / yScale.bandwidth()
-                        )
-                      ][0]
-                    } hat `
-                  );
-                info_group
+                  .text(`${playerNamesYLabel[Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())][0]} killed `);
+                for(let index in selectedEvents[event][3]){
+                  info_group
                   .append("image")
-                  .attr(
-                    "id",
-                    `p${Math.floor(
-                      (evt.clientY - hoverDivBounds.y) / yScale.bandwidth()
-                    )}-event-${event}-img`
-                  )
-                  .attr(
-                    "x",
-                    10 +
-                      document
-                        .getElementById(
-                          `p${Math.floor(
-                            (evt.clientY - hoverDivBounds.y) /
-                              yScale.bandwidth()
-                          )}-event-${event}`
-                        )
-                        .getBoundingClientRect().width +
-                      6 +
-                      20
-                  )
-                  .attr(
-                    "y",
-                    (document.getElementsByClassName(classname_of_eventgroup)
-                      .length > 1
-                      ? parseInt(
-                          document.getElementById(
-                            `p${Math.floor(
-                              (evt.clientY - hoverDivBounds.y) /
-                                yScale.bandwidth()
-                            )}-event-${
-                              document.getElementsByClassName(
-                                classname_of_eventgroup
-                              ).length - 2
-                            }`
-                          ).attributes.y.nodeValue
-                        ) + 20
-                      : 20) - 15.5
-                  )
+                  .attr("id",`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}-img`)
+                  .attr("x",10 + document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}`).getBoundingClientRect().width + 5 + 20 + index*2*(8+20.5))
+                  .attr("y",(document.getElementsByClassName(classname_of_eventgroup).length > 1 ? parseInt(document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) /yScale.bandwidth())}-event-${document.getElementsByClassName(classname_of_eventgroup).length - 2}`).attributes.y.nodeValue) + 20 : 20) - 15.5)
                   .attr("height", 22)
                   .attr("width", 22)
-                  .attr(
-                    "href",
-                    `http://ddragon.leagueoflegends.com/cdn/${currentPatch}/img/champion/${(() => {
-                      if(playerNamesYLabelfull[
-                        selectedEvents[event][3][0].victimId - 1
-                      ][1] == "Jarvaniv"){return "JarvanIV"}
-                      return playerNamesYLabelfull[
-                        selectedEvents[event][3][0].victimId - 1
-                      ][1]
-                    })()
-                    }.png`
-                  );
+                  .attr("href",`http://ddragon.leagueoflegends.com/cdn/${currentPatch}/img/champion/${(() => {if(playerNamesYLabelfull[selectedEvents[event][3][index].victimId - 1][1] == "Jarvaniv"){return "JarvanIV"}return playerNamesYLabelfull[selectedEvents[event][3][index].victimId - 1][1]})()}.png`);
                 info_group
                   .append("text")
-                  .attr(
-                    "id",
-                    `p${Math.floor(
-                      (evt.clientY - hoverDivBounds.y) / yScale.bandwidth()
-                    )}-event-${event}-desc`
-                  )
-                  .attr(
-                    "x",
-                    10 +
-                      document
-                        .getElementById(
-                          `p${Math.floor(
-                            (evt.clientY - hoverDivBounds.y) /
-                              yScale.bandwidth()
-                          )}-event-${event}`
-                        )
-                        .getBoundingClientRect().width +
-                      6 +
-                      20 +
-                      6 +
-                      20
-                  )
-                  .attr(
-                    "y",
-                    document.getElementById(
-                      `p${Math.floor(
-                        (evt.clientY - hoverDivBounds.y) / yScale.bandwidth()
-                      )}-event-${event}`
-                    ).attributes.y.nodeValue
-                  )
+                  .attr("id",`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}-desc`)
+                  .attr("x",10 + document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}`).getBoundingClientRect().width + 6 + 20 + 6 + 20 + index*2*(8+20.25))
+                  .attr("y",document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}`).attributes.y.nodeValue)
                   .attr("font-size", font_size_in_lens)
                   .attr("fill", "white")
-                  .text(
-                    `${(() => {
-                      if (selectedEvents[event][3].length == 1)
-                        return playerNamesYLabelfull[
-                          selectedEvents[event][3][0].victimId - 1
-                        ][0];
-                      let targets = "";
-                      for (let index in selectedEvents[event][3]) {
-                        if (index == selectedEvents[event][3].length - 1) {
-                          targets +=
-                            playerNamesYLabelfull[
-                              selectedEvents[event][3][index].victimId - 1
-                            ][0];
-                          break;
-                        }
-                        targets +=
-                          playerNamesYLabelfull[
-                            selectedEvents[event][3][index].victimId - 1
-                          ][0] + " & ";
-                      }
-                      return targets;
-                    })()} getötet`
-                  );
+                  .text(`${(() => {if(index == selectedEvents[event][3].length - 1){ return playerNamesYLabelfull[selectedEvents[event][3][index].victimId - 1][0]} return playerNamesYLabelfull[selectedEvents[event][3][index].victimId - 1][0] + " & ";
+                          /* if (selectedEvents[event][3].length == 1) return playerNamesYLabelfull[selectedEvents[event][3][0].victimId - 1][0];
+                          let targets = "";
+                          for (let index in selectedEvents[event][3]) {
+                            if (index == selectedEvents[event][3].length - 1) {
+                              targets += playerNamesYLabelfull[selectedEvents[event][3][index].victimId - 1][0];
+                              break;
+                            }
+                            targets += playerNamesYLabelfull[selectedEvents[event][3][index].victimId - 1][0] + " & ";
+                          }
+                          return targets; */
+                          })()}`
+                        );
+                }
+                /* info_group
+                  .append("image")
+                  .attr("id",`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}-img`)
+                  .attr("x",10 + document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}`).getBoundingClientRect().width + 6 + 20)
+                  .attr("y",(document.getElementsByClassName(classname_of_eventgroup).length > 1 ? parseInt(document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) /yScale.bandwidth())}-event-${document.getElementsByClassName(classname_of_eventgroup).length - 2}`).attributes.y.nodeValue) + 20 : 20) - 15.5)
+                  .attr("height", 22)
+                  .attr("width", 22)
+                  .attr("href",`http://ddragon.leagueoflegends.com/cdn/${currentPatch}/img/champion/${(() => {if(playerNamesYLabelfull[selectedEvents[event][3][0].victimId - 1][1] == "Jarvaniv"){return "JarvanIV"}return playerNamesYLabelfull[selectedEvents[event][3][0].victimId - 1][1]})()}.png`);
+                info_group
+                  .append("text")
+                  .attr("id",`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}-desc`)
+                  .attr("x",10 + document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}`).getBoundingClientRect().width + 6 + 20 + 6 + 20)
+                  .attr("y",document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}`).attributes.y.nodeValue)
+                  .attr("font-size", font_size_in_lens)
+                  .attr("fill", "white")
+                  .text(`${(() => {
+                          if (selectedEvents[event][3].length == 1) return playerNamesYLabelfull[selectedEvents[event][3][0].victimId - 1][0];
+                          let targets = "";
+                          for (let index in selectedEvents[event][3]) {
+                            if (index == selectedEvents[event][3].length - 1) {
+                              targets += playerNamesYLabelfull[selectedEvents[event][3][index].victimId - 1][0];
+                              break;
+                            }
+                            targets += playerNamesYLabelfull[selectedEvents[event][3][index].victimId - 1][0] + " & ";
+                          }
+                          return targets;
+                          })()}`
+                        ); */
                 break;
               case "ITEM_PURCHASED":
-                info_group
-                  .append("text")
-                  .attr(
-                    "id",
-                    `p${Math.floor(
-                      (evt.clientY - hoverDivBounds.y) / yScale.bandwidth()
-                    )}-event-${event}`
-                  )
-                  .attr("x", 10)
-                  .attr(
-                    "y",
-                    document.getElementsByClassName(classname_of_eventgroup)
-                      .length > 1
-                      ? parseInt(
-                          document.getElementById(
-                            `p${Math.floor(
-                              (evt.clientY - hoverDivBounds.y) /
-                                yScale.bandwidth()
-                            )}-event-${
-                              document.getElementsByClassName(
-                                classname_of_eventgroup
-                              ).length - 2
-                            }`
-                          ).attributes.y.nodeValue
-                        ) + 20
-                      : 20
-                  )
-                  .attr("font-size", font_size_in_lens)
-                  .attr("fill", "white")
-                  .text(
-                    `${
-                      selectedEvents[event][1] == 1
-                        ? "Ein"
-                        : selectedEvents[event][1] == 2
-                        ? "Zwei"
-                        : selectedEvents[event][1] == 3
-                        ? "Drei"
-                        : selectedEvents[event][1] == 4
-                        ? "Vier"
-                        : selectedEvents[event][1] > 4
-                        ? "Mehr als vier"
-                        : ""
-                    } Item${selectedEvents[event][1] == 1 ? "" : "s"} gekauft:`
-                  );
-                for (let index in selectedEvents[event][3]) {
-                  let image = info_group
-                    .append("image")
-                    .attr("width", 22)
-                    .attr("height", 22)
-                    .attr(
-                      "x",
-                      10 +
-                        document
-                          .getElementById(
-                            `p${Math.floor(
-                              (evt.clientY - hoverDivBounds.y) /
-                                yScale.bandwidth()
-                            )}-event-${event}`
-                          )
-                          .getBoundingClientRect().width +
-                        8 * (parseInt(index) + 1) +
-                        17 * parseInt(index)
-                    )
-                    .attr(
-                      "y",
-                      (document.getElementsByClassName(classname_of_eventgroup)
-                        .length > 1
-                        ? parseInt(
-                            document.getElementById(
-                              `p${Math.floor(
-                                (evt.clientY - hoverDivBounds.y) /
-                                  yScale.bandwidth()
-                              )}-event-${
-                                document.getElementsByClassName(
-                                  classname_of_eventgroup
-                                ).length - 2
-                              }`
-                            ).attributes.y.nodeValue
-                          ) + 20
-                        : 20) - 15.5
-                    )
-                    .attr(
-                      "href",
-                      `http://ddragon.leagueoflegends.com/cdn/${currentPatch}/img/item/${selectedEvents[event][3][index].itemId}.png`
-                    );
-                  image
-                    .append("title")
+                  info_group
+                    .append("text")
+                    .attr("id",`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}`)
+                    .attr("x", 10)
+                    .attr("y",document.getElementsByClassName(classname_of_eventgroup).length > 1 ? parseInt(document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${document.getElementsByClassName(classname_of_eventgroup).length - 2}`).attributes.y.nodeValue) + 20 : 20)
+                    .attr("font-size", font_size_in_lens)
+                    .attr("fill", "white")
                     .text(
-                      itemInfo.data[selectedEvents[event][3][index].itemId].name
+                      `${
+                        selectedEvents[event][1] == 1
+                          ? "One item"
+                          : selectedEvents[event][1] == 2
+                          ? "Two items"
+                          : selectedEvents[event][1] == 3
+                          ? "Three items"
+                          : selectedEvents[event][1] == 4
+                          ? "Four items"
+                          : selectedEvents[event][1] > 4
+                          ? "More than four items"
+                          : ""
+                      } bought:`
                     );
-                }
+                  for (let index in selectedEvents[event][3]) {
+                    let image = info_group
+                      .append("image")
+                      .attr("width", 22)
+                      .attr("height", 22)
+                      .attr("x",10 + document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) /yScale.bandwidth())}-event-${event}`).getBoundingClientRect().width + 8 * (parseInt(index) + 1) + 17 * parseInt(index))
+                      .attr("y",(document.getElementsByClassName(classname_of_eventgroup).length > 1 ? parseInt(document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) /yScale.bandwidth())}-event-${document.getElementsByClassName(classname_of_eventgroup).length - 2}`).attributes.y.nodeValue) + 20 : 20) - 15.5)
+                      .attr("href",`http://ddragon.leagueoflegends.com/cdn/${currentPatch}/img/item/${selectedEvents[event][3][index].itemId}.png`);
+                    image
+                      .append("title")
+                      .text(itemInfo.data[selectedEvents[event][3][index].itemId].name);
+                  }
                 break;
               case "WARD_PLACED":
                 info_group
                   .append("text")
-                  .attr(
-                    "id",
-                    `p${Math.floor(
-                      (evt.clientY - hoverDivBounds.y) / yScale.bandwidth()
-                    )}-event-${event}`
-                  )
+                  .attr("id",`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}`)
                   .attr("x", 10)
-                  .attr(
-                    "y",
-                    document.getElementsByClassName(classname_of_eventgroup)
-                      .length > 1
-                      ? parseInt(
-                          document.getElementById(
-                            `p${Math.floor(
-                              (evt.clientY - hoverDivBounds.y) /
-                                yScale.bandwidth()
-                            )}-event-${
-                              document.getElementsByClassName(
-                                classname_of_eventgroup
-                              ).length - 2
-                            }`
-                          ).attributes.y.nodeValue
-                        ) + 20
-                      : 20
-                  )
+                  .attr("y",document.getElementsByClassName(classname_of_eventgroup) .length > 1 ? parseInt(document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${document.getElementsByClassName(classname_of_eventgroup).length - 2}`).attributes.y.nodeValue) + 20 : 20)
                   .attr("font-size", font_size_in_lens)
                   .attr("fill", "white")
                   .text(
                     `${
                       selectedEvents[event][1] == 1
-                        ? "Einen Ward"
+                        ? "One ward"
                         : selectedEvents[event][1] == 2
-                        ? "Zwei Wards"
+                        ? "Two wards"
                         : selectedEvents[event][1] == 3
-                        ? "Drei Wards"
+                        ? "Three wards"
                         : selectedEvents[event][1] == 4
-                        ? "Vier Wards"
+                        ? "Four wards"
                         : selectedEvents[event][1] > 4
-                        ? "Mehr als vier Wards"
+                        ? "More than four wards"
                         : ""
-                    } platziert`
+                    } placed`
                   );
                 break;
               case "ELITE_MONSTER_KILL":
                 info_group
                   .append("text")
-                  .attr(
-                    "id",
-                    `p${Math.floor(
-                      (evt.clientY - hoverDivBounds.y) / yScale.bandwidth()
-                    )}-event-${event}`
-                  )
+                  .attr("id",`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}`)
                   .attr("x", 10)
-                  .attr(
-                    "y",
-                    document.getElementsByClassName(classname_of_eventgroup)
-                      .length > 1
-                      ? parseInt(
-                          document.getElementById(
-                            `p${Math.floor(
-                              (evt.clientY - hoverDivBounds.y) /
-                                yScale.bandwidth()
-                            )}-event-${
-                              document.getElementsByClassName(
-                                classname_of_eventgroup
-                              ).length - 2
-                            }`
-                          ).attributes.y.nodeValue
-                        ) + 20
-                      : 20
-                  )
+                  .attr("y",document.getElementsByClassName(classname_of_eventgroup).length > 1 ? parseInt(document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) /yScale.bandwidth())}-event-${document.getElementsByClassName(classname_of_eventgroup).length - 2}`).attributes.y.nodeValue) + 20 : 20)
                   .attr("font-size", font_size_in_lens)
                   .attr("fill", "white")
                   .text(
@@ -1562,92 +1088,48 @@ l53 -34 -79 -122 c-43 -68 -84 -122 -90 -120 -18 4 -480 296 -481 303 0 8 151
                         ? "Baron Nashor"
                         : selectedEvents[event][3][0].monsterSubType ==
                           "HEXTECH_DRAGON"
-                        ? "Hextech Drache"
+                        ? "Hextech dragon"
                         : selectedEvents[event][3][0].monsterSubType ==
                           "AIR_DRAGON"
-                        ? "Luft Drache"
+                        ? "Air dragon"
                         : selectedEvents[event][3][0].monsterSubType ==
                           "WATER_DRAGON"
-                        ? "Wasser Drache"
+                        ? "Water dragon"
                         : "Monster"
-                    } getötet`
+                    } killed`
                   );
                 break;
               case "BUILDING_KILL":
                 info_group
                   .append("text")
-                  .attr(
-                    "id",
-                    `p${Math.floor(
-                      (evt.clientY - hoverDivBounds.y) / yScale.bandwidth()
-                    )}-event-${event}`
-                  )
+                  .attr("id",`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}`)
                   .attr("x", 10)
-                  .attr(
-                    "y",
-                    document.getElementsByClassName(classname_of_eventgroup)
-                      .length > 1
-                      ? parseInt(
-                          document.getElementById(
-                            `p${Math.floor(
-                              (evt.clientY - hoverDivBounds.y) /
-                                yScale.bandwidth()
-                            )}-event-${
-                              document.getElementsByClassName(
-                                classname_of_eventgroup
-                              ).length - 2
-                            }`
-                          ).attributes.y.nodeValue
-                        ) + 20
-                      : 20
-                  )
+                  .attr("y",document.getElementsByClassName(classname_of_eventgroup).length > 1 ? parseInt(document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) /yScale.bandwidth())}-event-${document.getElementsByClassName(classname_of_eventgroup).length - 2}`).attributes.y.nodeValue) + 20 : 20)
                   .attr("font-size", font_size_in_lens)
                   .attr("fill", "white")
                   .text(
                     `${
                       selectedEvents[event][1] == 1
-                        ? "Ein"
+                        ? "One building"
                         : selectedEvents[event][1] == 2
-                        ? "Zwei"
+                        ? "Two buildings"
                         : selectedEvents[event][1] == 3
-                        ? "Drei"
+                        ? "Three buildings"
                         : selectedEvents[event][1] == 4
-                        ? "Vier"
+                        ? "Four buildings"
                         : selectedEvents[event][1] > 4
-                        ? "Mehr als vier"
+                        ? "More than four buildings"
                         : ""
-                    } Gebäude zerstört`
+                    } destroyed`
                   );
                 break;
               default:
                 info_group
                   .append("text")
                   .classed("eventsInLens", true)
-                  .attr(
-                    "id",
-                    `p${Math.floor(
-                      (evt.clientY - hoverDivBounds.y) / yScale.bandwidth()
-                    )}-event-${event}`
-                  )
+                  .attr("id",`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${event}`)
                   .attr("x", 10)
-                  .attr(
-                    "y",
-                    document.getElementsByClassName(classname_of_eventgroup)
-                      .length > 1
-                      ? parseInt(
-                          document.getElementById(
-                            `p${Math.floor(
-                              (evt.clientY - hoverDivBounds.y) /
-                                yScale.bandwidth()
-                            )}-event-${
-                              document.getElementsByClassName(
-                                classname_of_eventgroup
-                              ).length - 2
-                            }`
-                          ).attributes.y.nodeValue
-                        ) + 20
-                      : 20
-                  )
+                  .attr("y",document.getElementsByClassName(classname_of_eventgroup).length > 1 ? parseInt(document.getElementById(`p${Math.floor((evt.clientY - hoverDivBounds.y) / yScale.bandwidth())}-event-${document.getElementsByClassName(classname_of_eventgroup).length - 2}`).attributes.y.nodeValue) + 20 : 20)
                   .attr("font-size", font_size_in_lens)
                   .attr("fill", "white")
                   .text(selectedEvents[event][0]);
