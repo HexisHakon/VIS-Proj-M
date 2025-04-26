@@ -1,7 +1,7 @@
 <div id="top"></div>
 <div align="center">
   <img src="https://upload.wikimedia.org/wikipedia/de/1/1f/Otto-Friedrich-Universität_Bamberg_logo.svg" alt="Logo der Otto-Friedrich-Universität Bamberg" width="200" height="200">
-  <h3 align="center">VIS-Proj-M</h3>
+  <h3 align="center">Visually Exploring Team Communication and Gameplay Events in League of Legends</h3>
   <p align="center">
     Project owner: David Glombik
     <br />
