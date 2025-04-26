@@ -1,7 +1,4 @@
 <div id="top"></div>
-
-![Contributors](https://img.shields.io/badge/Contributors-David-green?style=for-the-badge)
-
 <div align="center">
   <img src="https://upload.wikimedia.org/wikipedia/de/1/1f/Otto-Friedrich-Universität_Bamberg_logo.svg" alt="Logo der Otto-Friedrich-Universität Bamberg" width="200" height="200">
   <h3 align="center">VIS-Proj-M</h3>
