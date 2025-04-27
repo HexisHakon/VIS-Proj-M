@@ -1,6 +1,5 @@
 const { Router } = require('express');
 const axios = require('axios');
-require('dotenv').config();
 
 const router = Router();
 const latestVersionURL = "https://ddragon.leagueoflegends.com/api/versions.json";

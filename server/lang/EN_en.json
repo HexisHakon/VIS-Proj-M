@@ -1,8 +1,0 @@
-{
-    "command_default_response" : "Command executed successfully",
-    "command_commands_description": "Replies with a description of each available command!",
-    "command_commands_embed_description": "These are the commands available on this server",
-    "command_commands_embed_footer" : "Missing a command? Contact The Hakon#1337!",
-    "command_ping_description": "Replies with pong!",
-    "command_record_description": "Records a voicechat and sends a DM with a multitrack for mixing & other purposes!"
-}

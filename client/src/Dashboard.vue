@@ -1,23 +1,17 @@
 <template>
   <div class="column-flex dashboard-wrapper heightfix">
-    <!-- <Header /> -->
     <div class="row-flex">
-        <!--<Sidebar />-->
         <Main />
     </div>
   </div>
 </template>
 
 <script>
-/* import Header from './components/Header.vue' */
-/* import Sidebar from './components/Sidebar.vue' */
 import Main from './components/Main.vue'
 
 export default {
   name: 'Dashboard',
   components: {
-/*       Header, */
-      /* Sidebar, */
       Main
   }
 }

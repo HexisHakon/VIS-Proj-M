@@ -1,8 +1,6 @@
 const { Router } = require('express');
 const match = require('../../matches/wissenscharbeit/Stage2_1v4.json')
 const timeline = require('../../matches/wissenscharbeit/Stage2_1v4_timeline.json')
-require('dotenv').config();
-
 const router = Router();
 
 router.get('/:id', async (req,res) => {
@@ -21,7 +19,5 @@ router.get('/:id', async (req,res) => {
     }
     
 })
-
-
 
 module.exports = router;

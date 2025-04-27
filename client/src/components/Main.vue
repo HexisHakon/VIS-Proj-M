@@ -2,7 +2,6 @@
   <div class="main-wrapper heightfix">
     <PlayerSides />
     <GameStats />
-    <!-- <PlayerTraits /> -->
     <Positioning :selectedPlayersArray="this.$store.state.selectedPlayer" />
   </div>
 </template>
@@ -10,7 +9,6 @@
 <script>
 import PlayerSides from './PlayerSides.vue'
 import GameStats from './GameStats.vue'
-/* import PlayerTraits from './PlayerTraits.vue' */
 import Positioning from './Positioning.vue'
 
 export default {
@@ -18,7 +16,6 @@ export default {
   components: {
     PlayerSides,
     GameStats,
-/*     PlayerTraits, */
     Positioning
   }
 }

@@ -23,7 +23,6 @@
 <script>
 import VoiceHistogram from './VoiceHistogram.vue'
 import Wordcloud from './Wordcloud.vue'
-//import DetailsVoiceBarchart from './DetailsVoiceBarchart.vue'
 import Timeline from './Timeline.vue'
 
 export default {
@@ -31,9 +30,7 @@ export default {
   components: {
     VoiceHistogram,
     Wordcloud,
-    Timeline,
-    //DetailsVoiceBarchart
-
+    Timeline
   },
   props: {
     selectedPlayersArray: Array
@@ -51,26 +48,16 @@ export default {
       let names = ''
       for(let index in this.selectedPlayersArray){
         if(!this.selectedPlayersArray[index]) continue
-        names += (/* this.$store.state.matchData.participants[index].summonerName */ index<5?`B${parseInt(index)+1} / `:`R${parseInt(index)%5 + 1} / `)
+        names += (index<5?`B${parseInt(index)+1} / `:`R${parseInt(index)%5 + 1} / `)
       }
       names = names.slice(0,names.length - 3)
       document.getElementById("barchart-title").innerHTML = `Voice activity from ${names}`
     }
   },
   mounted() {
-    // this.eventTileWrapperWidth = document.getElementById('event-tile-wrapper').getBoundingClientRect().width;
     this.wordcloudWidth = parseInt((document.getElementById('wordcloud-full-wrapper').getBoundingClientRect().width).toFixed(3));
     this.wordcloudHeight = parseInt((document.getElementById('wordcloud-full-wrapper').getBoundingClientRect().height).toFixed(3));
     
-    /* for(let x of this.$store.state.matchData.participants){
-        document.getElementById(x.summonerName).addEventListener('input', () => {
-          if(document.getElementById(x.summonerName).checked){
-            this.$store.commit('updateSelectedPlayer' , {playerID: x.participantId})
-          } else {
-            this.$store.commit('updateSelectedPlayer' , {playerID: 1})
-          }
-        })
-      } */
   },
   updated() {
     this.changeSelectedPlayers()
