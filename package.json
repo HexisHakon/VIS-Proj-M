@@ -1,5 +1,5 @@
 {
-  "name": "hexis-discord-bot",
+  "name": "vis-proj-m",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,29 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HexisHakon/HexisBot.git"
+    "url": "git+https://github.com/HexisHakon/VIS-Proj-M.git"
   },
   "author": "David Glombik",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/HexisHakon/HexisBot/issues"
+    "url": "https://github.com/HexisHakon/VIS-Proj-M/issues"
   },
-  "homepage": "https://github.com/HexisHakon/HexisBot#readme",
+  "homepage": "https://github.com/HexisHakon/VIS-Proj-M#readme",
   "dependencies": {
-    "@discordjs/builders": "^0.8.2",
-    "@discordjs/rest": "^0.1.0-canary.0",
-    "@discordjs/voice": "^0.7.5",
-    "arcsecond": "^4.1.0",
-    "arcsecond-binary": "^1.2.0",
     "axios": "^0.24.0",
     "cors": "^2.8.5",
-    "discord-api-types": "^0.24.0",
-    "discord.js": "^13.3.1",
-    "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "ffmpeg": "^0.0.4",
     "nodemon": "^2.0.15",
-    "vosk": "^0.3.32",
-    "wav-audio-length": "^0.1.1"
+    "vosk": "^0.3.32"
   }
 }
